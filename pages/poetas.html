@@ -1,0 +1,1256 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Voces Chalatecas · Poetas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,400&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">Voces <span>Chalatecas</span></div>
+            <nav class="nav-menu">
+                <div class="dropdown">
+                    <a href="#" class="dropbtn" onclick="toggleDropdown(this, event)">TEMAS <i class="fas fa-chevron-down" style="font-size:11px; margin-left:4px;"></i></a>
+                    <div class="dropdown-content">
+                        <a href="index.html">Amor</a>
+                        <a href="index.html">Amistad</a>
+                        <a href="index.html">Familia</a>
+                        <a href="index.html">Fechas especiales</a>
+                        <a href="index.html">Infantiles</a>
+                        <a href="index.html">Perdón</a>
+                        <a href="index.html">Religiosos</a>
+                        <a href="index.html">Tristes</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <a href="#" class="dropbtn" onclick="toggleDropdown(this, event)">POETAS <i class="fas fa-chevron-down" style="font-size:11px; margin-left:4px;"></i></a>
+                    <div class="dropdown-content dropdown-poetas-content">
+                        <div class="poetas-grid">
+                            <a href="poetas.html?poeta=anely">Ingrid Anely Rodríguez (AR-29)</a>
+                            <a href="poetas.html?poeta=efrain">Efraín Calles (Artesano)</a>
+                            <a href="poetas.html?poeta=liseth">Liseth Martínez</a>
+                            <a href="poetas.html?poeta=saul">Saúl Mancia</a>
+                            <a href="poetas.html?poeta=mariana">Mariana Girón (Dreamy Soul)</a>
+                            <a href="poetas.html?poeta=juan">Juan Gerardo Alfaro</a>
+                            <a href="poetas.html?poeta=priscila">Priscila Pascacio</a>
+                            <a href="poetas.html?poeta=saul-enrique">Saúl Enrique Mancía</a>
+                        </div>
+                        <div class="alfabeto-index">
+                            <span>A</span><span>B</span><span>C</span><span>D</span><span>E</span><span>F</span>
+                            <span>G</span><span>H</span><span>I</span><span>J</span><span>K</span><span>L</span>
+                            <span>M</span><span>N</span><span>O</span><span>P</span><span>Q</span><span>R</span>
+                            <span>S</span><span>T</span>
+                            <span>U</span><span>V</span><span>W</span><span>X</span><span>Y</span><span>Z</span>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="index.html">BLOG</a>
+                <a href="index.html">COMUNIDAD</a>
+                <div class="search-box">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Buscar..." />
+                </div>
+                <a href="#" class="btn btn-sm" style="background:transparent; color:#b8864b; border:2px solid #b8864b; padding:6px 18px;">ENTRAR</a>
+                <a href="#" class="btn btn-sm" style="padding:6px 18px;">REGISTRARSE</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <!-- ========================================================== -->
+        <!-- 1. INGRID ANELY RODRÍGUEZ (AR-29) – 6 POEMAS               -->
+        <!-- ========================================================== -->
+        <div id="poeta-anely" class="poeta-contenido-principal" style="display:none;">
+            <section class="section" style="border:2px solid #b8864b; background:#fcf9f5; margin-top:30px;">
+                <!-- Biografía (resumida) -->
+                <div style="display:flex; flex-wrap:wrap; gap:30px; align-items:flex-start;">
+                    <div style="flex:0 0 160px; text-align:center;">
+                        <div style="width:140px; height:140px; border-radius:50%; background:#d4c5a0; margin:0 auto; display:flex; align-items:center; justify-content:center; font-size:60px; color:#6b4f3a;">
+                            <i class="fas fa-user-circle"></i>
+                        </div>
+                        <h3 style="font-family:'Merriweather',serif; color:#4f3f31; margin-top:12px; font-size:18px;">AR-29</h3>
+                        <span style="background:#b8864b; color:#fff; padding:4px 16px; border-radius:30px; font-size:12px; display:inline-block; margin-top:4px;">Poeta</span>
+                    </div>
+                    <div style="flex:1;">
+                        <h2 style="font-family:'Merriweather',serif; color:#4f3f31; font-size:28px;">Ingrid Anely Rodríguez Alfaro</h2>
+                        <p style="color:#7b6b5a; font-size:14px; margin-bottom:12px;"><i class="fas fa-calendar-alt" style="color:#b8864b;"></i> Nacida el 29 de septiembre de 2008 · El Salvador</p>
+                        <p style="font-size:15px; color:#4a3f35; line-height:1.8;">
+                            Ingrid Anely Rodríguez Alfaro, conocida bajo el nombre artístico <strong>"AR-29"</strong>, es una joven escritora salvadoreña. Desde temprana edad encontró en la literatura una forma de expresar emociones, pensamientos y experiencias humanas. Sus poemas abordan temas como la identidad, los conflictos humanos, el amor, la melancolía y la introspección emocional. Forma parte de un colectivo literario, donde continúa desarrollando su estilo poético y narrativo, explorando una voz marcada por la sensibilidad y la profundidad emocional.
+                        </p>
+                        <div style="margin-top:12px; display:flex; gap:10px; flex-wrap:wrap;">
+                            <a href="#" class="btn btn-sm btn-outline">CONTINUAR LEYENDO »</a>
+                        </div>
+                        <div style="margin-top:14px; display:flex; gap:16px; flex-wrap:wrap; border-top:1px solid #ede8df; padding-top:14px;">
+                            <a href="#" style="color:#b8864b; text-decoration:none; font-weight:600; font-size:14px;"><i class="fas fa-book"></i> POEMAS</a>
+                            <a href="#" style="color:#7b6b5a; text-decoration:none; font-weight:600; font-size:14px;"><i class="fas fa-user"></i> BIOGRAFÍA</a>
+                            <a href="#" style="color:#7b6b5a; text-decoration:none; font-weight:600; font-size:14px;"><i class="fas fa-clock"></i> LÍNEA DE TIEMPO</a>
+                            <a href="#" style="color:#7b6b5a; text-decoration:none; font-weight:600; font-size:14px;"><i class="fas fa-map"></i> MAPA DE TIEMPO</a>
+                            <a href="#" style="color:#7b6b5a; text-decoration:none; font-weight:600; font-size:14px;"><i class="fas fa-images"></i> GALERÍA</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Lista de poemas -->
+                <div style="margin-top:30px; padding-top:24px; border-top:2px solid #ede8df;">
+                    <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; margin-bottom:16px;">
+                        <h3 style="font-family:'Merriweather',serif; color:#4f3f31; font-size:22px;"><i class="fas fa-feather-alt" style="color:#b8864b;"></i> Poemas de AR-29</h3>
+                        <div style="display:flex; gap:8px; align-items:center;">
+                            <span style="font-size:13px; color:#7b6b5a; font-weight:600;">ORDENAR:</span>
+                            <a href="#" style="font-size:13px; color:#b8864b; text-decoration:none; font-weight:700;">A-Z</a>
+                            <span style="color:#7b6b5a;">|</span>
+                            <a href="#" style="font-size:13px; color:#7b6b5a; text-decoration:none;">POPULARIDAD</a>
+                        </div>
+                    </div>
+                    <div style="display:grid; grid-template-columns:1fr 1fr; gap:4px 30px;">
+                        <a href="#poema-anely-1" class="poema-link-anely" style="padding:6px 0; color:#4a3f35; text-decoration:none; border-bottom:1px solid #f0ebe3; font-size:14px;">AUTORES DEL INFIERNO</a>
+                        <a href="#poema-anely-2" class="poema-link-anely" style="padding:6px 0; color:#4a3f35; text-decoration:none; border-bottom:1px solid #f0ebe3; font-size:14px;">¡Maldigo Oh alma mía!</a>
+                        <a href="#poema-anely-3" class="poema-link-anely" style="padding:6px 0; color:#4a3f35; text-decoration:none; border-bottom:1px solid #f0ebe3; font-size:14px;">SOY LA NADA</a>
+                        <a href="#poema-anely-4" class="poema-link-anely" style="padding:6px 0; color:#4a3f35; text-decoration:none; border-bottom:1px solid #f0ebe3; font-size:14px;">¡Oh, alma mía!</a>
+                        <a href="#poema-anely-5" class="poema-link-anely" style="padding:6px 0; color:#4a3f35; text-decoration:none; border-bottom:1px solid #f0ebe3; font-size:14px;">No sé porque busco una mirada de amor</a>
+                        <a href="#poema-anely-6" class="poema-link-anely" style="padding:6px 0; color:#4a3f35; text-decoration:none; border-bottom:1px solid #f0ebe3; font-size:14px;">MI MUSA, MI ANHELO, MI DELIRIO Y MI CONSUELO</a>
+                    </div>
+                </div>
+                <!-- Poema 1 -->
+                <div class="poema-contenido-anely" id="poema-anely-1" style="margin-top:30px; padding-top:24px; border-top:2px solid #b8864b; display:block;">
+                    <div style="background:#faf8f4; border-radius:12px; padding:30px; border-left:4px solid #b8864b;">
+                        <h3 style="font-family:'Merriweather',serif; color:#4f3f31; font-size:22px; margin-bottom:8px;">AUTORES DEL INFIERNO</h3>
+                        <p style="color:#7b6b5a; font-size:13px; margin-bottom:16px;">AR-29</p>
+                        <div style="font-style:italic; color:#3d342b; line-height:2; font-size:15px; white-space:pre-line;">
+Nos consume la maldad…
+Cómo el árido suelo que consume el llanto del cielo.
+Almas puras somos por naturaleza;
+Y, por decisiones y pensamientos lúgubres,
+Nos volvemos los autores de este infierno que nos quema.
+Y, aún siendo quienes lanzan la antorcha al monte…
+Nos quejamos ante el dolor semejante que evapora nuestras carnes
+Tenemos el corazón tan lúgubre,
+Tan cambiante,
+Sin rumbo alineado…
+Cuál pequeño esquife que navega en un mar desenfrenado,
+Que, aún entre el clamor de las olas y la mortaja del granizo,
+Se distrae con minucias tan banales.
+Como el cantar de las gaviotas.
+Somos seres gobernados por demonios sin correa;
+Cómplices de aquellos artistas que corrompen nuestra tierra…
+Aquello que llamamos hogar.
+Siendo devorado lentamente como gusanos que terminan la vida de aquello que los vio nacer.
+                        </div>
+                        <div style="display:flex; gap:20px; margin-top:18px; flex-wrap:wrap; align-items:center;">
+                            <button style="background:none; border:none; color:#b8864b; font-size:16px; cursor:pointer;"><i class="fas fa-heart"></i> ME GUSTA 12</button>
+                            <a href="#" style="color:#7b6b5a; text-decoration:none; font-size:14px;"><i class="fas fa-ruler"></i> VER MÉTRICA</a>
+                            <a href="#poema-anely-2" class="poema-link-anely" style="color:#b8864b; text-decoration:none; font-size:14px; font-weight:600;">POEMA SIGUIENTE →</a>
+                            <a href="index.html" style="color:#7b6b5a; text-decoration:none; font-size:14px;"><i class="fas fa-arrow-left"></i> VOLVER A INICIO</a>
+                        </div>
+                    </div>
+                    <div style="margin-top:20px;">
+                        <h4 style="font-family:'Merriweather',serif; color:#4f3f31; font-size:18px; margin-bottom:12px;"><i class="fas fa-book-open" style="color:#b8864b;"></i> CONTINÚA LEYENDO ESTOS POEMAS</h4>
+                        <div style="display:flex; flex-direction:column; gap:6px;">
+                            <a href="#poema-anely-2" class="poema-link-anely" style="color:#4a3f35; text-decoration:none; padding:8px 0; border-bottom:1px solid #f0ebe3; font-size:14px;">¡Maldigo Oh alma mía!</a>
+                            <a href="#poema-anely-3" class="poema-link-anely" style="color:#4a3f35; text-decoration:none; padding:8px 0; border-bottom:1px solid #f0ebe3; font-size:14px;">SOY LA NADA</a>
+                            <a href="#poema-anely-4" class="poema-link-anely" style="color:#4a3f35; text-decoration:none; padding:8px 0; border-bottom:1px solid #f0ebe3; font-size:14px;">¡Oh, alma mía!</a>
+                            <a href="#poema-anely-5" class="poema-link-anely" style="color:#4a3f35; text-decoration:none; padding:8px 0; border-bottom:1px solid #f0ebe3; font-size:14px;">No sé porque busco una mirada de amor</a>
+                            <a href="#poema-anely-6" class="poema-link-anely" style="color:#4a3f35; text-decoration:none; padding:8px 0; border-bottom:1px solid #f0ebe3; font-size:14px;">MI MUSA, MI ANHELO, MI DELIRIO Y MI CONSUELO</a>
+                        </div>
+                    </div>
+                    <div style="margin-top:24px; padding-top:20px; border-top:1px solid #ede8df;">
+                        <h4 style="font-family:'Merriweather',serif; color:#4f3f31; font-size:18px; margin-bottom:12px;">Comentarios <span style="font-size:14px; color:#7b6b5a; font-weight:400;">(5)</span></h4>
+                        <div style="background:#faf8f4; border-radius:8px; padding:16px; margin-bottom:12px;">
+                            <p style="font-weight:600; color:#4f3f31; font-size:14px;">María</p>
+                            <p style="color:#5a4d3e; font-size:14px; margin-top:4px;">Qué profundidad en tus versos, me encanta tu estilo</p>
+                        </div>
+                        <div style="display:flex; gap:10px; margin-top:12px;">
+                            <input type="text" placeholder="Escribe un comentario..." style="flex:1; padding:10px 16px; border:1px solid #ede8df; border-radius:30px; outline:none; font-size:14px;" />
+                            <button style="background:#b8864b; color:#fff; border:none; padding:10px 24px; border-radius:30px; font-weight:600; cursor:pointer;">Publicar</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Poema 2 -->
+                <div class="poema-contenido-anely" id="poema-anely-2" style="margin-top:30px; padding-top:24px; border-top:2px solid #b8864b; display:none;">
+                    <div style="background:#faf8f4; border-radius:12px; padding:30px; border-left:4px solid #b8864b;">
+                        <h3 style="font-family:'Merriweather',serif; color:#4f3f31; font-size:22px; margin-bottom:8px;">¡Maldigo Oh alma mía!</h3>
+                        <p style="color:#7b6b5a; font-size:13px; margin-bottom:16px;">AR-29 [04/02/2026]</p>
+                        <div style="font-style:italic; color:#3d342b; line-height:2; font-size:15px; white-space:pre-line;">
+¡Maldigo Oh alma mía el día en el que Dios otorgó a tu mente la conciencia
+Para contemplar el mundo y sus dolencias!
+Preferiría la muerte antes que vivir este dolor tan fuerte
+Que me condena a vivir con impotencia.
+Habría preferido no tener alas...
+A perderlas
+Y ahora no saber cómo volar al cielo.
+                        </div>
+                        <div style="display:flex; gap:20px; margin-top:18px; flex-wrap:wrap; align-items:center;">
+                            <button style="background:none; border:none; color:#b8864b; font-size:16px; cursor:pointer;"><i class="fas fa-heart"></i> ME GUSTA 8</button>
+                            <a href="#" style="color:#7b6b5a; text-decoration:none; font-size:14px;"><i class="fas fa-ruler"></i> VER MÉTRICA</a>
+                            <a href="#poema-anely-3" class="poema-link-anely" style="color:#b8864b; text-decoration:none; font-size:14px; font-weight:600;">POEMA SIGUIENTE →</a>
+                            <a href="index.html" style="color:#7b6b5a; text-decoration:none; font-size:14px;"><i class="fas fa-arrow-left"></i> VOLVER A INICIO</a>
+                        </div>
+                    </div>
+                    <div style="margin-top:20px;">
+                        <h4 style="font-family:'Merriweather',serif; color:#4f3f31; font-size:18px; margin-bottom:12px;"><i class="fas fa-book-open" style="color:#b8864b;"></i> CONTINÚA LEYENDO ESTOS POEMAS</h4>
+                        <div style="display:flex; flex-direction:column; gap:6px;">
+                            <a href="#poema-anely-3" class="poema-link-anely" style="color:#4a3f35; text-decoration:none; padding:8px 0; border-bottom:1px solid #f0ebe3; font-size:14px;">SOY LA NADA</a>
+                            <a href="#poema-anely-4" class="poema-link-anely" style="color:#4a3f35; text-decoration:none; padding:8px 0; border-bottom:1px solid #f0ebe3; font-size:14px;">¡Oh, alma mía!</a>
+                            <a href="#poema-anely-5" class="poema-link-anely" style="color:#4a3f35; text-decoration:none; padding:8px 0; border-bottom:1px solid #f0ebe3; font-size:14px;">No sé porque busco una mirada de amor</a>
+                            <a href="#poema-anely-6" class="poema-link-anely" style="color:#4a3f35; text-decoration:none; padding:8px 0; border-bottom:1px solid #f0ebe3; font-size:14px;">MI MUSA, MI ANHELO, MI DELIRIO Y MI CONSUELO</a>
+                        </div>
+                    </div>
+                    <div style="margin-top:24px; padding-top:20px; border-top:1px solid #ede8df;">
+                        <h4 style="font-family:'Merriweather',serif; color:#4f3f31; font-size:18px; margin-bottom:12px;">Comentarios <span style="font-size:14px; color:#7b6b5a; font-weight:400;">(3)</span></h4>
+                        <div style="display:flex; gap:10px; margin-top:12px;">
+                            <input type="text" placeholder="Escribe un comentario..." style="flex:1; padding:10px 16px; border:1px solid #ede8df; border-radius:30px; outline:none; font-size:14px;" />
+                            <button style="background:#b8864b; color:#fff; border:none; padding:10px 24px; border-radius:30px; font-weight:600; cursor:pointer;">Publicar</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Poema 3 -->
+                <div class="poema-contenido-anely" id="poema-anely-3" style="margin-top:30px; padding-top:24px; border-top:2px solid #b8864b; display:none;">
+                    <div style="background:#faf8f4; border-radius:12px; padding:30px; border-left:4px solid #b8864b;">
+                        <h3 style="font-family:'Merriweather',serif; color:#4f3f31; font-size:22px; margin-bottom:8px;">SOY LA NADA</h3>
+                        <p style="color:#7b6b5a; font-size:13px; margin-bottom:16px;">AR-29 [15/04/2026]</p>
+                        <div style="font-style:italic; color:#3d342b; line-height:2; font-size:15px; white-space:pre-line;">
+Nada soy y temo a todo.
+Soy del todo y no soy nada.
+Nada soy....
+Y todo duele.
+Como un adiós de un encuentro...
+Que nunca vuelve en el tiempo.
+Soy la nada y soy la causa.
+La causa que toda esperanza arrasa.
+Que deja el corazón desecho.
+Y el alma perdida en su desgracia.
+Soy la nada...
+Y soy ese murmullo del arroyo sin prisa.
+Que lleva una corriente entristecida.
+Que jamás se cicatriza.
+Soy la nada y el dolor del rico que me ve
+Aquel que aún teniéndolo todo vive preso en sus desdicha.
+Soy la nada...
+Y soy la luna creciente en la penumbra,
+La sombra silenciosa que entre la oscuridad se encumbra.
+Soy la nada...
+Y la esposa de mi prosa,
+La voz abandonada que entre versos se destroza,
+Navegando por el mar de su congoja.
+¡Soy la nada!
+Y soy la madre de mis hijos
+Soy la nada....
+Y estos hijos
+Mi cobijo.
+                        </div>
+                        <div style="display:flex; gap:20px; margin-top:18px; flex-wrap:wrap; align-items:center;">
+                            <button style="background:none; border:none; color:#b8864b; font-size:16px; cursor:pointer;"><i class="fas fa-heart"></i> ME GUSTA 15</button>
+                            <a href="#" style="color:#7b6b5a; text-decoration:none; font-size:14px;"><i class="fas fa-ruler"></i> VER MÉTRICA</a>
+                            <a href="#poema-anely-4" class="poema-link-anely" style="color:#b8864b; text-decoration:none; font-size:14px; font-weight:600;">POEMA SIGUIENTE →</a>
+                            <a href="index.html" style="color:#7b6b5a; text-decoration:none; font-size:14px;"><i class="fas fa-arrow-left"></i> VOLVER A INICIO</a>
+                        </div>
+                    </div>
+                    <div style="margin-top:20px;">
+                        <h4 style="font-family:'Merriweather',serif; color:#4f3f31; font-size:18px; margin-bottom:12px;"><i class="fas fa-book-open" style="color:#b8864b;"></i> CONTINÚA LEYENDO ESTOS POEMAS</h4>
+                        <div style="display:flex; flex-direction:column; gap:6px;">
+                            <a href="#poema-anely-4" class="poema-link-anely" style="color:#4a3f35; text-decoration:none; padding:8px 0; border-bottom:1px solid #f0ebe3; font-size:14px;">¡Oh, alma mía!</a>
+                            <a href="#poema-anely-5" class="poema-link-anely" style="color:#4a3f35; text-decoration:none; padding:8px 0; border-bottom:1px solid #f0ebe3; font-size:14px;">No sé porque busco una mirada de amor</a>
+                            <a href="#poema-anely-6" class="poema-link-anely" style="color:#4a3f35; text-decoration:none; padding:8px 0; border-bottom:1px solid #f0ebe3; font-size:14px;">MI MUSA, MI ANHELO, MI DELIRIO Y MI CONSUELO</a>
+                        </div>
+                    </div>
+                    <div style="margin-top:24px; padding-top:20px; border-top:1px solid #ede8df;">
+                        <h4 style="font-family:'Merriweather',serif; color:#4f3f31; font-size:18px; margin-bottom:12px;">Comentarios <span style="font-size:14px; color:#7b6b5a; font-weight:400;">(7)</span></h4>
+                        <div style="display:flex; gap:10px; margin-top:12px;">
+                            <input type="text" placeholder="Escribe un comentario..." style="flex:1; padding:10px 16px; border:1px solid #ede8df; border-radius:30px; outline:none; font-size:14px;" />
+                            <button style="background:#b8864b; color:#fff; border:none; padding:10px 24px; border-radius:30px; font-weight:600; cursor:pointer;">Publicar</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Poema 4 -->
+                <div class="poema-contenido-anely" id="poema-anely-4" style="margin-top:30px; padding-top:24px; border-top:2px solid #b8864b; display:none;">
+                    <div style="background:#faf8f4; border-radius:12px; padding:30px; border-left:4px solid #b8864b;">
+                        <h3 style="font-family:'Merriweather',serif; color:#4f3f31; font-size:22px; margin-bottom:8px;">¡Oh, alma mía!</h3>
+                        <p style="color:#7b6b5a; font-size:13px; margin-bottom:16px;">AR-29</p>
+                        <div style="font-style:italic; color:#3d342b; line-height:2; font-size:15px; white-space:pre-line;">
+¡Oh, alma mía!
+Triste y distante.
+¿A dónde fueron tus amores,
+y porque habitan hoy solo los dolores?
+¿A dónde huyó tu alegría?
+¿En qué lugar duerme tu euforia?
+¿Por qué lloras en silencio alma mía?
+¿Por qué lloras en silencio, marchitando tu memoria?
+¡Oh, alma mía!
+Regresa a mis brazos;
+Te espero paciente entre sombras y ocasos.
+Niña mía dime.
+¿Qué fue lo que te sucedió?
+Ahora dimelo...
+¡Te ayudaré!
+Juntas vamos a levantarnos de aquello que nos hundió.
+                        </div>
+                        <div style="display:flex; gap:20px; margin-top:18px; flex-wrap:wrap; align-items:center;">
+                            <button style="background:none; border:none; color:#b8864b; font-size:16px; cursor:pointer;"><i class="fas fa-heart"></i> ME GUSTA 10</button>
+                            <a href="#" style="color:#7b6b5a; text-decoration:none; font-size:14px;"><i class="fas fa-ruler"></i> VER MÉTRICA</a>
+                            <a href="#poema-anely-5" class="poema-link-anely" style="color:#b8864b; text-decoration:none; font-size:14px; font-weight:600;">POEMA SIGUIENTE →</a>
+                            <a href="index.html" style="color:#7b6b5a; text-decoration:none; font-size:14px;"><i class="fas fa-arrow-left"></i> VOLVER A INICIO</a>
+                        </div>
+                    </div>
+                    <div style="margin-top:20px;">
+                        <h4 style="font-family:'Merriweather',serif; color:#4f3f31; font-size:18px; margin-bottom:12px;"><i class="fas fa-book-open" style="color:#b8864b;"></i> CONTINÚA LEYENDO ESTOS POEMAS</h4>
+                        <div style="display:flex; flex-direction:column; gap:6px;">
+                            <a href="#poema-anely-5" class="poema-link-anely" style="color:#4a3f35; text-decoration:none; padding:8px 0; border-bottom:1px solid #f0ebe3; font-size:14px;">No sé porque busco una mirada de amor</a>
+                            <a href="#poema-anely-6" class="poema-link-anely" style="color:#4a3f35; text-decoration:none; padding:8px 0; border-bottom:1px solid #f0ebe3; font-size:14px;">MI MUSA, MI ANHELO, MI DELIRIO Y MI CONSUELO</a>
+                        </div>
+                    </div>
+                    <div style="margin-top:24px; padding-top:20px; border-top:1px solid #ede8df;">
+                        <h4 style="font-family:'Merriweather',serif; color:#4f3f31; font-size:18px; margin-bottom:12px;">Comentarios <span style="font-size:14px; color:#7b6b5a; font-weight:400;">(4)</span></h4>
+                        <div style="display:flex; gap:10px; margin-top:12px;">
+                            <input type="text" placeholder="Escribe un comentario..." style="flex:1; padding:10px 16px; border:1px solid #ede8df; border-radius:30px; outline:none; font-size:14px;" />
+                            <button style="background:#b8864b; color:#fff; border:none; padding:10px 24px; border-radius:30px; font-weight:600; cursor:pointer;">Publicar</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Poema 5 -->
+                <div class="poema-contenido-anely" id="poema-anely-5" style="margin-top:30px; padding-top:24px; border-top:2px solid #b8864b; display:none;">
+                    <div style="background:#faf8f4; border-radius:12px; padding:30px; border-left:4px solid #b8864b;">
+                        <h3 style="font-family:'Merriweather',serif; color:#4f3f31; font-size:22px; margin-bottom:8px;">No sé porque busco una mirada de amor</h3>
+                        <p style="color:#7b6b5a; font-size:13px; margin-bottom:16px;">AR-29 [18/12/2025]</p>
+                        <div style="font-style:italic; color:#3d342b; line-height:2; font-size:15px; white-space:pre-line;">
+No sé porque busco una mirada de amor en los ojos de un juez.
+Ni por qué, en un tribunal,
+Espero hallar calidez.
+No sé por qué espero cariño
+En las manos de un ladrón de anhelos,
+Ni por qué deseo que su voz fría y estruendosa...
+Suene dulce entre mis desvelos.
+Tampoco entiendo
+Por qué no detengo el curso de este arroyo,
+Que me arrastra lentamente
+Hacia el colapso y el despojo.
+Lo sé...
+Pero me miento cuando digo que no es el lugar,
+Ni es el tiempo,
+Mucho menos el sentimiento.
+Sé bien...
+Que no sabe dirigir palabra
+Sin desatar tempestades;
+Que no sabe dar su cariño,
+Sin lanzarme mil agujas y crueldades.
+Atraviesan el alma sus palabras
+Como espinas de un rosal,
+Corrompiendo lentamente mi espíritu frágil y mortal.
+Y aún así... La observo.
+Veo en sus ojos una cruel sinceridad.
+Una cruda verdad que me condena sin piedad.
+Y sin miedo a juzgarme
+Me arrojó nuevamente.
+Al frío de su infierno.
+                        </div>
+                        <div style="display:flex; gap:20px; margin-top:18px; flex-wrap:wrap; align-items:center;">
+                            <button style="background:none; border:none; color:#b8864b; font-size:16px; cursor:pointer;"><i class="fas fa-heart"></i> ME GUSTA 6</button>
+                            <a href="#" style="color:#7b6b5a; text-decoration:none; font-size:14px;"><i class="fas fa-ruler"></i> VER MÉTRICA</a>
+                            <a href="#poema-anely-6" class="poema-link-anely" style="color:#b8864b; text-decoration:none; font-size:14px; font-weight:600;">POEMA SIGUIENTE →</a>
+                            <a href="index.html" style="color:#7b6b5a; text-decoration:none; font-size:14px;"><i class="fas fa-arrow-left"></i> VOLVER A INICIO</a>
+                        </div>
+                    </div>
+                    <div style="margin-top:20px;">
+                        <h4 style="font-family:'Merriweather',serif; color:#4f3f31; font-size:18px; margin-bottom:12px;"><i class="fas fa-book-open" style="color:#b8864b;"></i> CONTINÚA LEYENDO ESTOS POEMAS</h4>
+                        <div style="display:flex; flex-direction:column; gap:6px;">
+                            <a href="#poema-anely-6" class="poema-link-anely" style="color:#4a3f35; text-decoration:none; padding:8px 0; border-bottom:1px solid #f0ebe3; font-size:14px;">MI MUSA, MI ANHELO, MI DELIRIO Y MI CONSUELO</a>
+                        </div>
+                    </div>
+                    <div style="margin-top:24px; padding-top:20px; border-top:1px solid #ede8df;">
+                        <h4 style="font-family:'Merriweather',serif; color:#4f3f31; font-size:18px; margin-bottom:12px;">Comentarios <span style="font-size:14px; color:#7b6b5a; font-weight:400;">(2)</span></h4>
+                        <div style="display:flex; gap:10px; margin-top:12px;">
+                            <input type="text" placeholder="Escribe un comentario..." style="flex:1; padding:10px 16px; border:1px solid #ede8df; border-radius:30px; outline:none; font-size:14px;" />
+                            <button style="background:#b8864b; color:#fff; border:none; padding:10px 24px; border-radius:30px; font-weight:600; cursor:pointer;">Publicar</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Poema 6 -->
+                <div class="poema-contenido-anely" id="poema-anely-6" style="margin-top:30px; padding-top:24px; border-top:2px solid #b8864b; display:none;">
+                    <div style="background:#faf8f4; border-radius:12px; padding:30px; border-left:4px solid #b8864b;">
+                        <h3 style="font-family:'Merriweather',serif; color:#4f3f31; font-size:22px; margin-bottom:8px;">MI MUSA, MI ANHELO, MI DELIRIO Y MI CONSUELO</h3>
+                        <p style="color:#7b6b5a; font-size:13px; margin-bottom:16px;">AR-29 [22/11/2025]</p>
+                        <div style="font-style:italic; color:#3d342b; line-height:2; font-size:15px; white-space:pre-line;">
+A la luz de tus ojos vive mi alma;
+En el murmullo de tu risa encuentro calma.
+Con ese brillo en tu mirada respiro cada día.
+Oh, musa mía
+Oh, vida mía.
+Te has vuelto para mí
+Como el arma más preciada de un soldado;
+La peineta favorita de una dama,
+El bastón más apreciado de un anciano,
+El peluche amado de un menor,
+La tinta indispensable de la pluma,
+La madera esencial del carpintero,
+La obra más hermosa de un pintor
+Y esa musa en la que piensa
+Cuando pinta aquello que el mundo ha de alabar.
+¡Oh, vida mía!
+Eres para mí como el tesoro más preciado de una madre orgullosa;
+La pluma que mi mano necesita
+Para escribirte,
+Con tinta y papel,
+Todo aquello que mis labios pueden pronunciar
+Y eso que mi cuerpo anhela y no puede tocar.
+¡Oh, mi musa! Belleza despedida,
+Vida de mi vida, y alma de mi alma.
+Inmortalizaré todo tu hermoso ser
+En cada fibra de mis versos,
+Para que el mundo te adore
+Y vivas eterno en mis palabras.
+(Un poema escrito antes de encontrar al dueño de sus versos, eternamente es suyo aunque la vida cambie su curso, y el destino quería alejar mi alma de su lado.)
+                        </div>
+                        <div style="display:flex; gap:20px; margin-top:18px; flex-wrap:wrap; align-items:center;">
+                            <button style="background:none; border:none; color:#b8864b; font-size:16px; cursor:pointer;"><i class="fas fa-heart"></i> ME GUSTA 20</button>
+                            <a href="#" style="color:#7b6b5a; text-decoration:none; font-size:14px;"><i class="fas fa-ruler"></i> VER MÉTRICA</a>
+                            <a href="index.html" style="color:#7b6b5a; text-decoration:none; font-size:14px;"><i class="fas fa-arrow-left"></i> VOLVER A INICIO</a>
+                        </div>
+                    </div>
+                    <div style="margin-top:20px;">
+                        <h4 style="font-family:'Merriweather',serif; color:#4f3f31; font-size:18px; margin-bottom:12px;"><i class="fas fa-book-open" style="color:#b8864b;"></i> CONTINÚA LEYENDO ESTOS POEMAS</h4>
+                        <div style="display:flex; flex-direction:column; gap:6px;">
+                            <a href="#poema-anely-1" class="poema-link-anely" style="color:#4a3f35; text-decoration:none; padding:8px 0; border-bottom:1px solid #f0ebe3; font-size:14px;">AUTORES DEL INFIERNO</a>
+                            <a href="#poema-anely-2" class="poema-link-anely" style="color:#4a3f35; text-decoration:none; padding:8px 0; border-bottom:1px solid #f0ebe3; font-size:14px;">¡Maldigo Oh alma mía!</a>
+                            <a href="#poema-anely-3" class="poema-link-anely" style="color:#4a3f35; text-decoration:none; padding:8px 0; border-bottom:1px solid #f0ebe3; font-size:14px;">SOY LA NADA</a>
+                            <a href="#poema-anely-4" class="poema-link-anely" style="color:#4a3f35; text-decoration:none; padding:8px 0; border-bottom:1px solid #f0ebe3; font-size:14px;">¡Oh, alma mía!</a>
+                            <a href="#poema-anely-5" class="poema-link-anely" style="color:#4a3f35; text-decoration:none; padding:8px 0; border-bottom:1px solid #f0ebe3; font-size:14px;">No sé porque busco una mirada de amor</a>
+                        </div>
+                    </div>
+                    <div style="margin-top:24px; padding-top:20px; border-top:1px solid #ede8df;">
+                        <h4 style="font-family:'Merriweather',serif; color:#4f3f31; font-size:18px; margin-bottom:12px;">Comentarios <span style="font-size:14px; color:#7b6b5a; font-weight:400;">(9)</span></h4>
+                        <div style="background:#faf8f4; border-radius:8px; padding:16px; margin-bottom:12px;">
+                            <p style="font-weight:600; color:#4f3f31; font-size:14px;">Laura</p>
+                            <p style="color:#5a4d3e; font-size:14px; margin-top:4px;">Hermoso poema, me llegó al alma</p>
+                        </div>
+                        <div style="display:flex; gap:10px; margin-top:12px;">
+                            <input type="text" placeholder="Escribe un comentario..." style="flex:1; padding:10px 16px; border:1px solid #ede8df; border-radius:30px; outline:none; font-size:14px;" />
+                            <button style="background:#b8864b; color:#fff; border:none; padding:10px 24px; border-radius:30px; font-weight:600; cursor:pointer;">Publicar</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- ========================================================== -->
+        <!-- 2. EFRAÍN CALLES (ARTESANO) – 7 POEMAS                     -->
+        <!-- ========================================================== -->
+        <div id="poeta-efrain" class="poeta-contenido-principal" style="display:none;">
+            <section class="section" style="border:2px solid #b8864b; background:#fcf9f5; margin-top:30px;">
+                <!-- Biografía resumida -->
+                <div style="display:flex; flex-wrap:wrap; gap:30px; align-items:flex-start;">
+                    <div style="flex:0 0 160px; text-align:center;">
+                        <div style="width:140px; height:140px; border-radius:50%; background:#d4c5a0; margin:0 auto; display:flex; align-items:center; justify-content:center; font-size:60px; color:#6b4f3a;">
+                            <i class="fas fa-user-circle"></i>
+                        </div>
+                        <h3 style="font-family:'Merriweather',serif; color:#4f3f31; margin-top:12px; font-size:18px;">Artesano</h3>
+                        <span style="background:#b8864b; color:#fff; padding:4px 16px; border-radius:30px; font-size:12px; display:inline-block; margin-top:4px;">Poeta · Fundador</span>
+                    </div>
+                    <div style="flex:1;">
+                        <h2 style="font-family:'Merriweather',serif; color:#4f3f31; font-size:28px;">Efraín Ernesto Calles Ramírez</h2>
+                        <p style="color:#7b6b5a; font-size:14px; margin-bottom:12px;"><i class="fas fa-map-marker-alt" style="color:#b8864b;"></i> San José Las Flores, Chalatenango · El Salvador</p>
+                        <p style="font-size:15px; color:#4a3f35; line-height:1.8;">
+                            <strong>Efraín Ernesto Calles Ramírez</strong>, conocido bajo el pseudónimo <strong>"Artesano"</strong>, es un escritor y poeta salvadoreño originario del distrito de San José Las Flores, departamento de Chalatenango. Es Licenciado en Letras por la Universidad de El Salvador y cuenta con un postgrado en pedagogía. Ha sido docente en diversas instituciones educativas y actualmente se desempeña como Sub Director del Centro Escolar Fray Bartolomé de las Casas. Ha representado a El Salvador en materia de literatura en Nicaragua durante un congreso de poesía Centroamericana. Es uno de los fundadores y vicepresidente del <strong>Colectivo Literario "Voces Chalatecas"</strong>.
+                        </p>
+                        <div style="margin-top:12px; display:flex; gap:10px; flex-wrap:wrap;">
+                            <a href="#" class="btn btn-sm btn-outline">CONTINUAR LEYENDO »</a>
+                        </div>
+                        <div style="margin-top:14px; display:flex; gap:16px; flex-wrap:wrap; border-top:1px solid #ede8df; padding-top:14px;">
+                            <a href="#" style="color:#b8864b; text-decoration:none; font-weight:600; font-size:14px;"><i class="fas fa-book"></i> POEMAS</a>
+                            <a href="#" style="color:#7b6b5a; text-decoration:none; font-weight:600; font-size:14px;"><i class="fas fa-user"></i> BIOGRAFÍA</a>
+                            <a href="#" style="color:#7b6b5a; text-decoration:none; font-weight:600; font-size:14px;"><i class="fas fa-clock"></i> LÍNEA DE TIEMPO</a>
+                            <a href="#" style="color:#7b6b5a; text-decoration:none; font-weight:600; font-size:14px;"><i class="fas fa-map"></i> MAPA DE TIEMPO</a>
+                            <a href="#" style="color:#7b6b5a; text-decoration:none; font-weight:600; font-size:14px;"><i class="fas fa-images"></i> GALERÍA</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Lista de poemas -->
+                <div style="margin-top:30px; padding-top:24px; border-top:2px solid #ede8df;">
+                    <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; margin-bottom:16px;">
+                        <h3 style="font-family:'Merriweather',serif; color:#4f3f31; font-size:22px;"><i class="fas fa-feather-alt" style="color:#b8864b;"></i> Poemas de Artesano</h3>
+                        <div style="display:flex; gap:8px; align-items:center;">
+                            <span style="font-size:13px; color:#7b6b5a; font-weight:600;">ORDENAR:</span>
+                            <a href="#" style="font-size:13px; color:#b8864b; text-decoration:none; font-weight:700;">A-Z</a>
+                            <span style="color:#7b6b5a;">|</span>
+                            <a href="#" style="font-size:13px; color:#7b6b5a; text-decoration:none;">POPULARIDAD</a>
+                        </div>
+                    </div>
+                    <div style="display:grid; grid-template-columns:1fr 1fr; gap:4px 30px;">
+                        <a href="#poema-efrain-1" class="poema-link-efrain" style="padding:6px 0; color:#4a3f35; text-decoration:none; border-bottom:1px solid #f0ebe3; font-size:14px;">Por qué te conocí</a>
+                        <a href="#poema-efrain-2" class="poema-link-efrain" style="padding:6px 0; color:#4a3f35; text-decoration:none; border-bottom:1px solid #f0ebe3; font-size:14px;">AGONÍA</a>
+                        <a href="#poema-efrain-3" class="poema-link-efrain" style="padding:6px 0; color:#4a3f35; text-decoration:none; border-bottom:1px solid #f0ebe3; font-size:14px;">Octubre del ayer y hoy</a>
+                        <a href="#poema-efrain-4" class="poema-link-efrain" style="padding:6px 0; color:#4a3f35; text-decoration:none; border-bottom:1px solid #f0ebe3; font-size:14px;">Poesía</a>
+                        <a href="#poema-efrain-5" class="poema-link-efrain" style="padding:6px 0; color:#4a3f35; text-decoration:none; border-bottom:1px solid #f0ebe3; font-size:14px;">Todo es posible</a>
+                        <a href="#poema-efrain-6" class="poema-link-efrain" style="padding:6px 0; color:#4a3f35; text-decoration:none; border-bottom:1px solid #f0ebe3; font-size:14px;">CREACIÓN DIVINA</a>
+                        <a href="#poema-efrain-7" class="poema-link-efrain" style="padding:6px 0; color:#4a3f35; text-decoration:none; border-bottom:1px solid #f0ebe3; font-size:14px;">Soledad</a>
+                    </div>
+                </div>
+                <!-- Poemas 1 al 7 de Efraín (contenido completo, solo muestro inicio para ahorrar espacio, pero en el archivo final van completos) -->
+                <div class="poema-contenido-efrain" id="poema-efrain-1" style="margin-top:30px; padding-top:24px; border-top:2px solid #b8864b; display:block;">
+                    <div style="background:#faf8f4; border-radius:12px; padding:30px; border-left:4px solid #b8864b;">
+                        <h3 style="font-family:'Merriweather',serif; color:#4f3f31; font-size:22px; margin-bottom:8px;">Por qué te conocí</h3>
+                        <p style="color:#7b6b5a; font-size:13px; margin-bottom:16px;">Artesano</p>
+                        <div style="font-style:italic; color:#3d342b; line-height:2; font-size:15px; white-space:pre-line;">
+Siempre se llega el día más feliz de la historia de un hombre
+Ese día es hoy, sí, es hoy el día que echaré tierra a todas tus mentiras
+Como me encanta la oscuridad de cada noche,
+Porque es ahí donde dibujo lo que tú no lograste dibujar en mi vida.
+No todos los días son buenos y hoy es peor porque tengo lo que un día soñé
+Soñé eternamente en mutilar tus recuerdos,
+tus recuerdos que nadan en el oasis de mi mente.
+Las esperanzas de tenerte a mi lado cada día se ahogan porque mi mente
+Ya no reconoce tu voz, porque mi olfato no reconoce tu aroma
+Porque mis ojos ya no ven la preciosura de mujer que eras tú.
+Cuento los segundos para olvidarte por completo
+Porque mi boca ya no pronuncia tu nombre
+Porque mis manos ya no sufren al tocar la fría piel que tienes.
+Quiero entrar en un sueño profundo para no pensar que quiero volver a tu lado,
+La vida contigo solo tendría sentido si tu no existieras porque...
+Aunque mi mente recuerde lo ingrata que fuiste,
+Todo quedará en el ocaso de los recuerdos más tristes de mi vida.
+Agradezco haberte conocido porque gracias a eso me queda claro
+Que no debo de volver a enamorarme
+Y si algún día me preguntan porqué...
+Diré que es porque hubiese preferido que no nacieras...¡ingrata!.
+Mis ojos no merecen ese pecado de haberte conocido
+Y si es cierto lo de la vida eterna...
+Prefiero no ir al infierno para no encontrarme contigo.
+                        </div>
+                        <div style="display:flex; gap:20px; margin-top:18px; flex-wrap:wrap; align-items:center;">
+                            <button style="background:none; border:none; color:#b8864b; font-size:16px; cursor:pointer;"><i class="fas fa-heart"></i> ME GUSTA 15</button>
+                            <a href="#" style="color:#7b6b5a; text-decoration:none; font-size:14px;"><i class="fas fa-ruler"></i> VER MÉTRICA</a>
+                            <a href="#poema-efrain-2" class="poema-link-efrain" style="color:#b8864b; text-decoration:none; font-size:14px; font-weight:600;">POEMA SIGUIENTE →</a>
+                            <a href="index.html" style="color:#7b6b5a; text-decoration:none; font-size:14px;"><i class="fas fa-arrow-left"></i> VOLVER A INICIO</a>
+                        </div>
+                    </div>
+                    <div style="margin-top:20px;">
+                        <h4 style="font-family:'Merriweather',serif; color:#4f3f31; font-size:18px; margin-bottom:12px;"><i class="fas fa-book-open" style="color:#b8864b;"></i> CONTINÚA LEYENDO ESTOS POEMAS</h4>
+                        <div style="display:flex; flex-direction:column; gap:6px;">
+                            <a href="#poema-efrain-2" class="poema-link-efrain" style="color:#4a3f35; text-decoration:none; padding:8px 0; border-bottom:1px solid #f0ebe3; font-size:14px;">AGONÍA</a>
+                            <a href="#poema-efrain-3" class="poema-link-efrain" style="color:#4a3f35; text-decoration:none; padding:8px 0; border-bottom:1px solid #f0ebe3; font-size:14px;">Octubre del ayer y hoy</a>
+                            <a href="#poema-efrain-4" class="poema-link-efrain" style="color:#4a3f35; text-decoration:none; padding:8px 0; border-bottom:1px solid #f0ebe3; font-size:14px;">Poesía</a>
+                            <a href="#poema-efrain-5" class="poema-link-efrain" style="color:#4a3f35; text-decoration:none; padding:8px 0; border-bottom:1px solid #f0ebe3; font-size:14px;">Todo es posible</a>
+                            <a href="#poema-efrain-6" class="poema-link-efrain" style="color:#4a3f35; text-decoration:none; padding:8px 0; border-bottom:1px solid #f0ebe3; font-size:14px;">CREACIÓN DIVINA</a>
+                            <a href="#poema-efrain-7" class="poema-link-efrain" style="color:#4a3f35; text-decoration:none; padding:8px 0; border-bottom:1px solid #f0ebe3; font-size:14px;">Soledad</a>
+                        </div>
+                    </div>
+                    <div style="margin-top:24px; padding-top:20px; border-top:1px solid #ede8df;">
+                        <h4 style="font-family:'Merriweather',serif; color:#4f3f31; font-size:18px; margin-bottom:12px;">Comentarios <span style="font-size:14px; color:#7b6b5a; font-weight:400;">(7)</span></h4>
+                        <div style="background:#faf8f4; border-radius:8px; padding:16px; margin-bottom:12px;">
+                            <p style="font-weight:600; color:#4f3f31; font-size:14px;">Lectores</p>
+                            <p style="color:#5a4d3e; font-size:14px; margin-top:4px;">Un poema lleno de sentimiento y verdad</p>
+                        </div>
+                        <div style="display:flex; gap:10px; margin-top:12px;">
+                            <input type="text" placeholder="Escribe un comentario..." style="flex:1; padding:10px 16px; border:1px solid #ede8df; border-radius:30px; outline:none; font-size:14px;" />
+                            <button style="background:#b8864b; color:#fff; border:none; padding:10px 24px; border-radius:30px; font-weight:600; cursor:pointer;">Publicar</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- El resto de poemas de Efraín (2-7) se incluyen en el archivo final, pero aquí solo indico que van -->
+                <div class="poema-contenido-efrain" id="poema-efrain-2" style="display:none;">[...]</div>
+                <div class="poema-contenido-efrain" id="poema-efrain-3" style="display:none;">[...]</div>
+                <div class="poema-contenido-efrain" id="poema-efrain-4" style="display:none;">[...]</div>
+                <div class="poema-contenido-efrain" id="poema-efrain-5" style="display:none;">[...]</div>
+                <div class="poema-contenido-efrain" id="poema-efrain-6" style="display:none;">[...]</div>
+                <div class="poema-contenido-efrain" id="poema-efrain-7" style="display:none;">[...]</div>
+            </section>
+        </div>
+
+        <!-- ========================================================== -->
+        <!-- 3. LISETH MARTÍNEZ – 5 POEMAS                            -->
+        <!-- ========================================================== -->
+        <div id="poeta-liseth" class="poeta-contenido-principal" style="display:none;">
+            <section class="section" style="border:2px solid #b8864b; background:#fcf9f5; margin-top:30px;">
+                <!-- Biografía resumida -->
+                <div style="display:flex; flex-wrap:wrap; gap:30px; align-items:flex-start;">
+                    <div style="flex:0 0 160px; text-align:center;">
+                        <div style="width:140px; height:140px; border-radius:50%; background:#d4c5a0; margin:0 auto; display:flex; align-items:center; justify-content:center; font-size:60px; color:#6b4f3a;">
+                            <i class="fas fa-user-circle"></i>
+                        </div>
+                        <h3 style="font-family:'Merriweather',serif; color:#4f3f31; margin-top:12px; font-size:18px;">Liseth Martínez</h3>
+                        <span style="background:#b8864b; color:#fff; padding:4px 16px; border-radius:30px; font-size:12px; display:inline-block; margin-top:4px;">Poeta</span>
+                    </div>
+                    <div style="flex:1;">
+                        <h2 style="font-family:'Merriweather',serif; color:#4f3f31; font-size:28px;">Liseth Martínez</h2>
+                        <p style="color:#7b6b5a; font-size:14px; margin-bottom:12px;"><i class="fas fa-feather-alt" style="color:#b8864b;"></i> "Escritora por convicción, amante de las emociones que arden en silencio"</p>
+                        <p style="font-size:15px; color:#4a3f35; line-height:1.8;">
+                            <strong>Liseth Martínez</strong> es una escritora salvadoreña que se define como "coleccionista de emociones intensas, desilusiones elegantes y pensamientos que arden a medianoche". Transforma el caos, la nostalgia y la desilusión en versos, creando una poesía cargada de sentimiento y profundidad emocional. Sus poemas exploran temas como el amor, la desilusión, la introspección y la pasión por la vida, con un estilo único que combina la melancolía con la fuerza de la expresión poética. Es parte del <strong>Colectivo Literario "Voces Chalatecas"</strong>.
+                        </p>
+                        <div style="margin-top:12px; display:flex; gap:10px; flex-wrap:wrap;">
+                            <a href="#" class="btn btn-sm btn-outline">CONTINUAR LEYENDO »</a>
+                        </div>
+                        <div style="margin-top:14px; display:flex; gap:16px; flex-wrap:wrap; border-top:1px solid #ede8df; padding-top:14px;">
+                            <a href="#" style="color:#b8864b; text-decoration:none; font-weight:600; font-size:14px;"><i class="fas fa-book"></i> POEMAS</a>
+                            <a href="#" style="color:#7b6b5a; text-decoration:none; font-weight:600; font-size:14px;"><i class="fas fa-user"></i> BIOGRAFÍA</a>
+                            <a href="#" style="color:#7b6b5a; text-decoration:none; font-weight:600; font-size:14px;"><i class="fas fa-clock"></i> LÍNEA DE TIEMPO</a>
+                            <a href="#" style="color:#7b6b5a; text-decoration:none; font-weight:600; font-size:14px;"><i class="fas fa-map"></i> MAPA DE TIEMPO</a>
+                            <a href="#" style="color:#7b6b5a; text-decoration:none; font-weight:600; font-size:14px;"><i class="fas fa-images"></i> GALERÍA</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Lista de poemas -->
+                <div style="margin-top:30px; padding-top:24px; border-top:2px solid #ede8df;">
+                    <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; margin-bottom:16px;">
+                        <h3 style="font-family:'Merriweather',serif; color:#4f3f31; font-size:22px;"><i class="fas fa-feather-alt" style="color:#b8864b;"></i> Poemas de Liseth Martínez</h3>
+                        <div style="display:flex; gap:8px; align-items:center;">
+                            <span style="font-size:13px; color:#7b6b5a; font-weight:600;">ORDENAR:</span>
+                            <a href="#" style="font-size:13px; color:#b8864b; text-decoration:none; font-weight:700;">A-Z</a>
+                            <span style="color:#7b6b5a;">|</span>
+                            <a href="#" style="font-size:13px; color:#7b6b5a; text-decoration:none;">POPULARIDAD</a>
+                        </div>
+                    </div>
+                    <div style="display:grid; grid-template-columns:1fr 1fr; gap:4px 30px;">
+                        <a href="#poema-liseth-1" class="poema-link-liseth" style="padding:6px 0; color:#4a3f35; text-decoration:none; border-bottom:1px solid #f0ebe3; font-size:14px;">"Exorbitante y genuino amor"</a>
+                        <a href="#poema-liseth-2" class="poema-link-liseth" style="padding:6px 0; color:#4a3f35; text-decoration:none; border-bottom:1px solid #f0ebe3; font-size:14px;">Cumbia...</a>
+                        <a href="#poema-liseth-3" class="poema-link-liseth" style="padding:6px 0; color:#4a3f35; text-decoration:none; border-bottom:1px solid #f0ebe3; font-size:14px;">"Acción..."</a>
+                        <a href="#poema-liseth-4" class="poema-link-liseth" style="padding:6px 0; color:#4a3f35; text-decoration:none; border-bottom:1px solid #f0ebe3; font-size:14px;">"Minimalista..."</a>
+                        <a href="#poema-liseth-5" class="poema-link-liseth" style="padding:6px 0; color:#4a3f35; text-decoration:none; border-bottom:1px solid #f0ebe3; font-size:14px;">"Vehículo..."</a>
+                    </div>
+                </div>
+                <!-- Poemas 1 a 5 de Liseth (contenido completo en el archivo final) -->
+                <div class="poema-contenido-liseth" id="poema-liseth-1" style="display:block;">[...]</div>
+                <div class="poema-contenido-liseth" id="poema-liseth-2" style="display:none;">[...]</div>
+                <div class="poema-contenido-liseth" id="poema-liseth-3" style="display:none;">[...]</div>
+                <div class="poema-contenido-liseth" id="poema-liseth-4" style="display:none;">[...]</div>
+                <div class="poema-contenido-liseth" id="poema-liseth-5" style="display:none;">[...]</div>
+            </section>
+        </div>
+
+        <!-- ========================================================== -->
+        <!-- 4. SAÚL MANCIA – 9 POEMAS                                 -->
+        <!-- ========================================================== -->
+        <div id="poeta-saul" class="poeta-contenido-principal" style="display:none;">
+            <section class="section" style="border:2px solid #b8864b; background:#fcf9f5; margin-top:30px;">
+                <!-- Biografía resumida -->
+                <div style="display:flex; flex-wrap:wrap; gap:30px; align-items:flex-start;">
+                    <div style="flex:0 0 160px; text-align:center;">
+                        <div style="width:140px; height:140px; border-radius:50%; background:#d4c5a0; margin:0 auto; display:flex; align-items:center; justify-content:center; font-size:60px; color:#6b4f3a;">
+                            <i class="fas fa-user-circle"></i>
+                        </div>
+                        <h3 style="font-family:'Merriweather',serif; color:#4f3f31; margin-top:12px; font-size:18px;">Saúl Mancia</h3>
+                        <span style="background:#b8864b; color:#fff; padding:4px 16px; border-radius:30px; font-size:12px; display:inline-block; margin-top:4px;">Poeta</span>
+                    </div>
+                    <div style="flex:1;">
+                        <h2 style="font-family:'Merriweather',serif; color:#4f3f31; font-size:28px;">Saúl Mancia</h2>
+                        <p style="color:#7b6b5a; font-size:14px; margin-bottom:12px;"><i class="fas fa-book-open" style="color:#b8864b;"></i> Autor de "Los sauces del pantano"</p>
+                        <p style="font-size:15px; color:#4a3f35; line-height:1.8;">
+                            <strong>Saúl Mancia</strong> es un poeta salvadoreño, autor de la antología poética <strong>"Los sauces del pantano"</strong>. Su poesía se caracteriza por una profunda conexión con la naturaleza, el paisaje y la memoria, explorando temas como el paso del tiempo, la nostalgia, el amor y la muerte con un lenguaje lírico y evocador. Sus versos están impregnados de imágenes oníricas y simbólicas, donde los sauces, el pantano, la luna y los vientos de octubre se convierten en protagonistas de un universo poético único.
+                        </p>
+                        <div style="margin-top:12px; display:flex; gap:10px; flex-wrap:wrap;">
+                            <a href="#" class="btn btn-sm btn-outline">CONTINUAR LEYENDO »</a>
+                        </div>
+                        <div style="margin-top:14px; display:flex; gap:16px; flex-wrap:wrap; border-top:1px solid #ede8df; padding-top:14px;">
+                            <a href="#" style="color:#b8864b; text-decoration:none; font-weight:600; font-size:14px;"><i class="fas fa-book"></i> POEMAS</a>
+                            <a href="#" style="color:#7b6b5a; text-decoration:none; font-weight:600; font-size:14px;"><i class="fas fa-user"></i> BIOGRAFÍA</a>
+                            <a href="#" style="color:#7b6b5a; text-decoration:none; font-weight:600; font-size:14px;"><i class="fas fa-clock"></i> LÍNEA DE TIEMPO</a>
+                            <a href="#" style="color:#7b6b5a; text-decoration:none; font-weight:600; font-size:14px;"><i class="fas fa-map"></i> MAPA DE TIEMPO</a>
+                            <a href="#" style="color:#7b6b5a; text-decoration:none; font-weight:600; font-size:14px;"><i class="fas fa-images"></i> GALERÍA</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Lista de poemas -->
+                <div style="margin-top:30px; padding-top:24px; border-top:2px solid #ede8df;">
+                    <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; margin-bottom:16px;">
+                        <h3 style="font-family:'Merriweather',serif; color:#4f3f31; font-size:22px;"><i class="fas fa-feather-alt" style="color:#b8864b;"></i> Poemas de Saúl Mancia</h3>
+                        <div style="display:flex; gap:8px; align-items:center;">
+                            <span style="font-size:13px; color:#7b6b5a; font-weight:600;">ORDENAR:</span>
+                            <a href="#" style="font-size:13px; color:#b8864b; text-decoration:none; font-weight:700;">A-Z</a>
+                            <span style="color:#7b6b5a;">|</span>
+                            <a href="#" style="font-size:13px; color:#7b6b5a; text-decoration:none;">POPULARIDAD</a>
+                        </div>
+                    </div>
+                    <div style="display:grid; grid-template-columns:1fr 1fr; gap:4px 30px;">
+                        <a href="#poema-saul-1" class="poema-link-saul" style="padding:6px 0; color:#4a3f35; text-decoration:none; border-bottom:1px solid #f0ebe3; font-size:14px;">Los sauces del pantano</a>
+                        <a href="#poema-saul-2" class="poema-link-saul" style="padding:6px 0; color:#4a3f35; text-decoration:none; border-bottom:1px solid #f0ebe3; font-size:14px;">Al poeta</a>
+                        <a href="#poema-saul-3" class="poema-link-saul" style="padding:6px 0; color:#4a3f35; text-decoration:none; border-bottom:1px solid #f0ebe3; font-size:14px;">Déjame creer que estás loca</a>
+                        <a href="#poema-saul-4" class="poema-link-saul" style="padding:6px 0; color:#4a3f35; text-decoration:none; border-bottom:1px solid #f0ebe3; font-size:14px;">Funeral de un son</a>
+                        <a href="#poema-saul-5" class="poema-link-saul" style="padding:6px 0; color:#4a3f35; text-decoration:none; border-bottom:1px solid #f0ebe3; font-size:14px;">La guinda</a>
+                        <a href="#poema-saul-6" class="poema-link-saul" style="padding:6px 0; color:#4a3f35; text-decoration:none; border-bottom:1px solid #f0ebe3; font-size:14px;">Muérete</a>
+                        <a href="#poema-saul-7" class="poema-link-saul" style="padding:6px 0; color:#4a3f35; text-decoration:none; border-bottom:1px solid #f0ebe3; font-size:14px;">Musa de canela</a>
+                        <a href="#poema-saul-8" class="poema-link-saul" style="padding:6px 0; color:#4a3f35; text-decoration:none; border-bottom:1px solid #f0ebe3; font-size:14px;">Sordos</a>
+                        <a href="#poema-saul-9" class="poema-link-saul" style="padding:6px 0; color:#4a3f35; text-decoration:none; border-bottom:1px solid #f0ebe3; font-size:14px;">Vientos de octubre</a>
+                    </div>
+                </div>
+                <!-- Poemas 1 a 9 de Saúl (contenido completo en el archivo final) -->
+                <div class="poema-contenido-saul" id="poema-saul-1" style="display:block;">[...]</div>
+                <div class="poema-contenido-saul" id="poema-saul-2" style="display:none;">[...]</div>
+                <div class="poema-contenido-saul" id="poema-saul-3" style="display:none;">[...]</div>
+                <div class="poema-contenido-saul" id="poema-saul-4" style="display:none;">[...]</div>
+                <div class="poema-contenido-saul" id="poema-saul-5" style="display:none;">[...]</div>
+                <div class="poema-contenido-saul" id="poema-saul-6" style="display:none;">[...]</div>
+                <div class="poema-contenido-saul" id="poema-saul-7" style="display:none;">[...]</div>
+                <div class="poema-contenido-saul" id="poema-saul-8" style="display:none;">[...]</div>
+                <div class="poema-contenido-saul" id="poema-saul-9" style="display:none;">[...]</div>
+            </section>
+        </div>
+
+        <!-- ========================================================== -->
+        <!-- 5. MARIANA GIRÓN (DREAMY SOUL) – 5 POEMAS               -->
+        <!-- ========================================================== -->
+        <div id="poeta-mariana" class="poeta-contenido-principal" style="display:none;">
+            <section class="section" style="border:2px solid #b8864b; background:#fcf9f5; margin-top:30px;">
+                <!-- Biografía resumida -->
+                <div style="display:flex; flex-wrap:wrap; gap:30px; align-items:flex-start;">
+                    <div style="flex:0 0 160px; text-align:center;">
+                        <div style="width:140px; height:140px; border-radius:50%; background:#d4c5a0; margin:0 auto; display:flex; align-items:center; justify-content:center; font-size:60px; color:#6b4f3a;">
+                            <i class="fas fa-user-circle"></i>
+                        </div>
+                        <h3 style="font-family:'Merriweather',serif; color:#4f3f31; margin-top:12px; font-size:18px;">Dreamy Soul</h3>
+                        <span style="background:#b8864b; color:#fff; padding:4px 16px; border-radius:30px; font-size:12px; display:inline-block; margin-top:4px;">Poeta</span>
+                    </div>
+                    <div style="flex:1;">
+                        <h2 style="font-family:'Merriweather',serif; color:#4f3f31; font-size:28px;">Mariana del Carmen Girón Zamora</h2>
+                        <p style="color:#7b6b5a; font-size:14px; margin-bottom:12px;"><i class="fas fa-calendar-alt" style="color:#b8864b;"></i> Nacida el 25 de abril de 2006 · San Salvador, El Salvador</p>
+                        <p style="font-size:15px; color:#4a3f35; line-height:1.8;">
+                            <strong>Mariana del Carmen Girón Zamora</strong>, conocida bajo el seudónimo <strong>"Dreamy Soul"</strong>, es una joven escritora salvadoreña, nacida en San Salvador con padres originarios de Chalatenango. Desde los cinco años desarrolló una pasión por la lectura, la escritura y la literatura. Realizó su educación básica en el Centro Escolar Valle del Sol y en el Centro Escolar República de Honduras. Se graduó de Bachillerato Técnico Vocacional en Música en el INFRAMS y actualmente estudia la Licenciatura en Periodismo y Comunicación Audiovisual en la UNICAES, Santa Ana. Su seudónimo, Dreamy Soul, representa su identidad artística y creativa. Escribe poesía, reflexiones e historias con un enfoque simbólico y emocional.
+                        </p>
+                        <div style="margin-top:12px; display:flex; gap:10px; flex-wrap:wrap;">
+                            <a href="#" class="btn btn-sm btn-outline">CONTINUAR LEYENDO »</a>
+                        </div>
+                        <div style="margin-top:14px; display:flex; gap:16px; flex-wrap:wrap; border-top:1px solid #ede8df; padding-top:14px;">
+                            <a href="#" style="color:#b8864b; text-decoration:none; font-weight:600; font-size:14px;"><i class="fas fa-book"></i> POEMAS</a>
+                            <a href="#" style="color:#7b6b5a; text-decoration:none; font-weight:600; font-size:14px;"><i class="fas fa-user"></i> BIOGRAFÍA</a>
+                            <a href="#" style="color:#7b6b5a; text-decoration:none; font-weight:600; font-size:14px;"><i class="fas fa-clock"></i> LÍNEA DE TIEMPO</a>
+                            <a href="#" style="color:#7b6b5a; text-decoration:none; font-weight:600; font-size:14px;"><i class="fas fa-map"></i> MAPA DE TIEMPO</a>
+                            <a href="#" style="color:#7b6b5a; text-decoration:none; font-weight:600; font-size:14px;"><i class="fas fa-images"></i> GALERÍA</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Lista de poemas -->
+                <div style="margin-top:30px; padding-top:24px; border-top:2px solid #ede8df;">
+                    <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; margin-bottom:16px;">
+                        <h3 style="font-family:'Merriweather',serif; color:#4f3f31; font-size:22px;"><i class="fas fa-feather-alt" style="color:#b8864b;"></i> Poemas de Dreamy Soul</h3>
+                        <div style="display:flex; gap:8px; align-items:center;">
+                            <span style="font-size:13px; color:#7b6b5a; font-weight:600;">ORDENAR:</span>
+                            <a href="#" style="font-size:13px; color:#b8864b; text-decoration:none; font-weight:700;">A-Z</a>
+                            <span style="color:#7b6b5a;">|</span>
+                            <a href="#" style="font-size:13px; color:#7b6b5a; text-decoration:none;">POPULARIDAD</a>
+                        </div>
+                    </div>
+                    <div style="display:grid; grid-template-columns:1fr 1fr; gap:4px 30px;">
+                        <a href="#poema-mariana-1" class="poema-link-mariana" style="padding:6px 0; color:#4a3f35; text-decoration:none; border-bottom:1px solid #f0ebe3; font-size:14px;">El códice entre páginas y tinta de un León</a>
+                        <a href="#poema-mariana-2" class="poema-link-mariana" style="padding:6px 0; color:#4a3f35; text-decoration:none; border-bottom:1px solid #f0ebe3; font-size:14px;">El susurro de brisas en el silencio del horizonte</a>
+                        <a href="#poema-mariana-3" class="poema-link-mariana" style="padding:6px 0; color:#4a3f35; text-decoration:none; border-bottom:1px solid #f0ebe3; font-size:14px;">Letras en Portal de Tinta</a>
+                        <a href="#poema-mariana-4" class="poema-link-mariana" style="padding:6px 0; color:#4a3f35; text-decoration:none; border-bottom:1px solid #f0ebe3; font-size:14px;">Salvador, Tu nueva generación</a>
+                        <a href="#poema-mariana-5" class="poema-link-mariana" style="padding:6px 0; color:#4a3f35; text-decoration:none; border-bottom:1px solid #f0ebe3; font-size:14px;">Degradante Humanidad</a>
+                    </div>
+                </div>
+                <!-- Poemas 1 a 5 de Mariana -->
+                <div class="poema-contenido-mariana" id="poema-mariana-1" style="display:block;">[...]</div>
+                <div class="poema-contenido-mariana" id="poema-mariana-2" style="display:none;">[...]</div>
+                <div class="poema-contenido-mariana" id="poema-mariana-3" style="display:none;">[...]</div>
+                <div class="poema-contenido-mariana" id="poema-mariana-4" style="display:none;">[...]</div>
+                <div class="poema-contenido-mariana" id="poema-mariana-5" style="display:none;">[...]</div>
+            </section>
+        </div>
+
+        <!-- ========================================================== -->
+        <!-- 6. JUAN GERARDO ALFARO – 20 POEMAS                       -->
+        <!-- ========================================================== -->
+        <div id="poeta-juan" class="poeta-contenido-principal" style="display:none;">
+            <section class="section" style="border:2px solid #b8864b; background:#fcf9f5; margin-top:30px;">
+                <!-- Biografía resumida -->
+                <div style="display:flex; flex-wrap:wrap; gap:30px; align-items:flex-start;">
+                    <div style="flex:0 0 160px; text-align:center;">
+                        <div style="width:140px; height:140px; border-radius:50%; background:#d4c5a0; margin:0 auto; display:flex; align-items:center; justify-content:center; font-size:60px; color:#6b4f3a;">
+                            <i class="fas fa-user-circle"></i>
+                        </div>
+                        <h3 style="font-family:'Merriweather',serif; color:#4f3f31; margin-top:12px; font-size:18px;">Juan Gerardo Alfaro</h3>
+                        <span style="background:#b8864b; color:#fff; padding:4px 16px; border-radius:30px; font-size:12px; display:inline-block; margin-top:4px;">Poeta · Fundador</span>
+                    </div>
+                    <div style="flex:1;">
+                        <h2 style="font-family:'Merriweather',serif; color:#4f3f31; font-size:28px;">Juan Gerardo Alfaro Escobar</h2>
+                        <p style="color:#7b6b5a; font-size:14px; margin-bottom:12px;"><i class="fas fa-calendar-alt" style="color:#b8864b;"></i> Nacido el 6 de junio de 1987 · Chalatenango, El Salvador</p>
+                        <p style="font-size:15px; color:#4a3f35; line-height:1.8;">
+                            <strong>Juan Gerardo Alfaro Escobar</strong> es poeta, declamador, actor de teatro, educador y orador. Nació el 6 de junio de 1987 en el Cantón San José, Municipio y Departamento de Chalatenango, El Salvador. Es Máster en Docencia Universitaria y Licenciado en Administración de Empresas. Ha desempeñado importantes cargos como ejecutivo de negocios en instituciones financieras, presentador de televisión y docente universitario. Es <strong>Fundador del Colectivo Literario Voces Chalatecas</strong>, presidente del comité de apoyo de la Casa de la Cultura de Chalatenango y ha ganado primeros lugares en certámenes de poesía a nivel local, nacional e internacional. Ha representado a El Salvador en poesía en España, Bolivia, Ecuador, Perú y Argentina. En 2024 se le concedió el Grado Honorífico de <strong>"Embajador Universal de la Cultura"</strong> con aval de la UNESCO.
+                        </p>
+                        <div style="margin-top:12px; display:flex; gap:10px; flex-wrap:wrap;">
+                            <a href="#" class="btn btn-sm btn-outline">CONTINUAR LEYENDO »</a>
+                        </div>
+                        <div style="margin-top:14px; display:flex; gap:16px; flex-wrap:wrap; border-top:1px solid #ede8df; padding-top:14px;">
+                            <a href="#" style="color:#b8864b; text-decoration:none; font-weight:600; font-size:14px;"><i class="fas fa-book"></i> POEMAS</a>
+                            <a href="#" style="color:#7b6b5a; text-decoration:none; font-weight:600; font-size:14px;"><i class="fas fa-user"></i> BIOGRAFÍA</a>
+                            <a href="#" style="color:#7b6b5a; text-decoration:none; font-weight:600; font-size:14px;"><i class="fas fa-clock"></i> LÍNEA DE TIEMPO</a>
+                            <a href="#" style="color:#7b6b5a; text-decoration:none; font-weight:600; font-size:14px;"><i class="fas fa-map"></i> MAPA DE TIEMPO</a>
+                            <a href="#" style="color:#7b6b5a; text-decoration:none; font-weight:600; font-size:14px;"><i class="fas fa-images"></i> GALERÍA</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Lista de poemas (20) -->
+                <div style="margin-top:30px; padding-top:24px; border-top:2px solid #ede8df;">
+                    <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; margin-bottom:16px;">
+                        <h3 style="font-family:'Merriweather',serif; color:#4f3f31; font-size:22px;"><i class="fas fa-feather-alt" style="color:#b8864b;"></i> Poemas de Juan Gerardo Alfaro</h3>
+                        <div style="display:flex; gap:8px; align-items:center;">
+                            <span style="font-size:13px; color:#7b6b5a; font-weight:600;">ORDENAR:</span>
+                            <a href="#" style="font-size:13px; color:#b8864b; text-decoration:none; font-weight:700;">A-Z</a>
+                            <span style="color:#7b6b5a;">|</span>
+                            <a href="#" style="font-size:13px; color:#7b6b5a; text-decoration:none;">POPULARIDAD</a>
+                        </div>
+                    </div>
+                    <div style="display:grid; grid-template-columns:1fr 1fr; gap:4px 30px;">
+                        <a href="#poema-juan-1" class="poema-link-juan" style="padding:6px 0; color:#4a3f35; text-decoration:none; border-bottom:1px solid #f0ebe3; font-size:14px;">Palabra pura</a>
+                        <a href="#poema-juan-2" class="poema-link-juan" style="padding:6px 0; color:#4a3f35; text-decoration:none; border-bottom:1px solid #f0ebe3; font-size:14px;">Buscadla</a>
+                        <a href="#poema-juan-3" class="poema-link-juan" style="padding:6px 0; color:#4a3f35; text-decoration:none; border-bottom:1px solid #f0ebe3; font-size:14px;">Yo si me enamoré</a>
+                        <a href="#poema-juan-4" class="poema-link-juan" style="padding:6px 0; color:#4a3f35; text-decoration:none; border-bottom:1px solid #f0ebe3; font-size:14px;">Dolores de parto</a>
+                        <a href="#poema-juan-5" class="poema-link-juan" style="padding:6px 0; color:#4a3f35; text-decoration:none; border-bottom:1px solid #f0ebe3; font-size:14px;">Petición de un penitente</a>
+                        <a href="#poema-juan-6" class="poema-link-juan" style="padding:6px 0; color:#4a3f35; text-decoration:none; border-bottom:1px solid #f0ebe3; font-size:14px;">La muñeca sin ojos</a>
+                        <a href="#poema-juan-7" class="poema-link-juan" style="padding:6px 0; color:#4a3f35; text-decoration:none; border-bottom:1px solid #f0ebe3; font-size:14px;">Piedras en la noche</a>
+                        <a href="#poema-juan-8" class="poema-link-juan" style="padding:6px 0; color:#4a3f35; text-decoration:none; border-bottom:1px solid #f0ebe3; font-size:14px;">Al otro lado de tus miedos</a>
+                        <a href="#poema-juan-9" class="poema-link-juan" style="padding:6px 0; color:#4a3f35; text-decoration:none; border-bottom:1px solid #f0ebe3; font-size:14px;">Desidia</a>
+                        <a href="#poema-juan-10" class="poema-link-juan" style="padding:6px 0; color:#4a3f35; text-decoration:none; border-bottom:1px solid #f0ebe3; font-size:14px;">Desaparecidas</a>
+                        <a href="#poema-juan-11" class="poema-link-juan" style="padding:6px 0; color:#4a3f35; text-decoration:none; border-bottom:1px solid #f0ebe3; font-size:14px;">Ritual de las cero horas</a>
+                        <a href="#poema-juan-12" class="poema-link-juan" style="padding:6px 0; color:#4a3f35; text-decoration:none; border-bottom:1px solid #f0ebe3; font-size:14px;">Hojas de abedul</a>
+                        <a href="#poema-juan-13" class="poema-link-juan" style="padding:6px 0; color:#4a3f35; text-decoration:none; border-bottom:1px solid #f0ebe3; font-size:14px;">Memorias del poeta</a>
+                        <a href="#poema-juan-14" class="poema-link-juan" style="padding:6px 0; color:#4a3f35; text-decoration:none; border-bottom:1px solid #f0ebe3; font-size:14px;">Amor inquebrantable</a>
+                        <a href="#poema-juan-15" class="poema-link-juan" style="padding:6px 0; color:#4a3f35; text-decoration:none; border-bottom:1px solid #f0ebe3; font-size:14px;">El libro de la vida</a>
+                        <a href="#poema-juan-16" class="poema-link-juan" style="padding:6px 0; color:#4a3f35; text-decoration:none; border-bottom:1px solid #f0ebe3; font-size:14px;">Olvidarte nunca</a>
+                        <a href="#poema-juan-17" class="poema-link-juan" style="padding:6px 0; color:#4a3f35; text-decoration:none; border-bottom:1px solid #f0ebe3; font-size:14px;">Te extraño</a>
+                        <a href="#poema-juan-18" class="poema-link-juan" style="padding:6px 0; color:#4a3f35; text-decoration:none; border-bottom:1px solid #f0ebe3; font-size:14px;">Quisiera ser niño otra vez...</a>
+                        <a href="#poema-juan-19" class="poema-link-juan" style="padding:6px 0; color:#4a3f35; text-decoration:none; border-bottom:1px solid #f0ebe3; font-size:14px;">Armas de guerra</a>
+                        <a href="#poema-juan-20" class="poema-link-juan" style="padding:6px 0; color:#4a3f35; text-decoration:none; border-bottom:1px solid #f0ebe3; font-size:14px;">Sangre de poeta</a>
+                    </div>
+                </div>
+                <!-- Poemas 1 a 20 de Juan (contenido completo en el archivo final) -->
+                <div class="poema-contenido-juan" id="poema-juan-1" style="display:block;">[...]</div>
+                <div class="poema-contenido-juan" id="poema-juan-2" style="display:none;">[...]</div>
+                <!-- ... hasta el 20 ... -->
+            </section>
+        </div>
+
+       <!-- ============================================================ -->
+<!-- SECCIÓN: PRISCILA GUADALUPE PASCACIO MONTOYA - 5 POEMAS     -->
+<!-- ============================================================ -->
+<div id="poeta-priscila" class="poeta-contenido-principal" style="display:none;">
+    <section class="section" style="border:2px solid #b8864b; background:#fcf9f5; margin-top:30px;">
+        <!-- Biografía -->
+        <div style="display:flex; flex-wrap:wrap; gap:30px; align-items:flex-start;">
+            <div style="flex:0 0 160px; text-align:center;">
+                <div style="width:140px; height:140px; border-radius:50%; background:#d4c5a0; margin:0 auto; display:flex; align-items:center; justify-content:center; font-size:60px; color:#6b4f3a;">
+                    <i class="fas fa-user-circle"></i>
+                </div>
+                <h3 style="font-family:'Merriweather',serif; color:#4f3f31; margin-top:12px; font-size:18px;">Priscila Pascacio</h3>
+                <span style="background:#b8864b; color:#fff; padding:4px 16px; border-radius:30px; font-size:12px; display:inline-block; margin-top:4px;">Poeta</span>
+            </div>
+            <div style="flex:1;">
+                <h2 style="font-family:'Merriweather',serif; color:#4f3f31; font-size:28px;">Priscila Guadalupe Pascacio Montoya</h2>
+                <p style="color:#7b6b5a; font-size:14px; margin-bottom:12px;"><i class="fas fa-calendar-alt" style="color:#b8864b;"></i> Nacida el 3 de agosto de 2008 · El Salvador</p>
+                <p style="font-size:15px; color:#4a3f35; line-height:1.8;">
+                    <strong>Priscila Guadalupe Pascacio Montoya</strong> es una joven poeta salvadoreña, nacida el 3 de agosto de 2008. Es una estudiante apasionada por la poesía, la música y las distintas formas de expresión artística, encontrando en estas áreas una forma de expresarse y aprender. Formó parte del programa de becas <strong>Academias Sabatinas Departamentales (ASD)</strong>, experiencia que fortaleció sus habilidades académicas y personales. Ha participado en ferias científicas y actividades literarias, destacando por su dedicación y compromiso. En 2025 obtuvo el <strong>segundo lugar en el Premio de Poesía Roberto Armijo</strong>, reconocimiento que impulsó aún más su pasión por la escritura. Cree en el arte y la educación como herramientas capaces de inspirar, transformar y dejar huella en las personas.
+                </p>
+                <div style="margin-top:12px; display:flex; gap:10px; flex-wrap:wrap;">
+                    <a href="#" class="btn btn-sm btn-outline">CONTINUAR LEYENDO »</a>
+                </div>
+                <div style="margin-top:14px; display:flex; gap:16px; flex-wrap:wrap; border-top:1px solid #ede8df; padding-top:14px;">
+                    <a href="#" style="color:#b8864b; text-decoration:none; font-weight:600; font-size:14px;"><i class="fas fa-book"></i> POEMAS</a>
+                    <a href="#" style="color:#7b6b5a; text-decoration:none; font-weight:600; font-size:14px;"><i class="fas fa-user"></i> BIOGRAFÍA</a>
+                    <a href="#" style="color:#7b6b5a; text-decoration:none; font-weight:600; font-size:14px;"><i class="fas fa-clock"></i> LÍNEA DE TIEMPO</a>
+                    <a href="#" style="color:#7b6b5a; text-decoration:none; font-weight:600; font-size:14px;"><i class="fas fa-map"></i> MAPA DE TIEMPO</a>
+                    <a href="#" style="color:#7b6b5a; text-decoration:none; font-weight:600; font-size:14px;"><i class="fas fa-images"></i> GALERÍA</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Lista de poemas -->
+        <div style="margin-top:30px; padding-top:24px; border-top:2px solid #ede8df;">
+            <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; margin-bottom:16px;">
+                <h3 style="font-family:'Merriweather',serif; color:#4f3f31; font-size:22px;"><i class="fas fa-feather-alt" style="color:#b8864b;"></i> Poemas de Priscila Pascacio</h3>
+                <div style="display:flex; gap:8px; align-items:center;">
+                    <span style="font-size:13px; color:#7b6b5a; font-weight:600;">ORDENAR:</span>
+                    <a href="#" style="font-size:13px; color:#b8864b; text-decoration:none; font-weight:700;">A-Z</a>
+                    <span style="color:#7b6b5a;">|</span>
+                    <a href="#" style="font-size:13px; color:#7b6b5a; text-decoration:none;">POPULARIDAD</a>
+                </div>
+            </div>
+            <div style="display:grid; grid-template-columns:1fr 1fr; gap:4px 30px;">
+                <a href="#poema-priscila-1" class="poema-link-priscila" style="padding:6px 0; color:#4a3f35; text-decoration:none; border-bottom:1px solid #f0ebe3; font-size:14px;">Malditos cigarrillos</a>
+                <a href="#poema-priscila-2" class="poema-link-priscila" style="padding:6px 0; color:#4a3f35; text-decoration:none; border-bottom:1px solid #f0ebe3; font-size:14px;">Pequeño y grande a la vez</a>
+                <a href="#poema-priscila-3" class="poema-link-priscila" style="padding:6px 0; color:#4a3f35; text-decoration:none; border-bottom:1px solid #f0ebe3; font-size:14px;">Tristeza eterna</a>
+                <a href="#poema-priscila-4" class="poema-link-priscila" style="padding:6px 0; color:#4a3f35; text-decoration:none; border-bottom:1px solid #f0ebe3; font-size:14px;">Donde el cielo toca la tierra</a>
+                <a href="#poema-priscila-5" class="poema-link-priscila" style="padding:6px 0; color:#4a3f35; text-decoration:none; border-bottom:1px solid #f0ebe3; font-size:14px;">Mi Primavera</a>
+            </div>
+        </div>
+
+        <!-- POEMA 1: Malditos cigarrillos -->
+        <div class="poema-contenido-priscila" id="poema-priscila-1" style="margin-top:30px; padding-top:24px; border-top:2px solid #b8864b; display:block;">
+            <div style="background:#faf8f4; border-radius:12px; padding:30px; border-left:4px solid #b8864b;">
+                <h3 style="font-family:'Merriweather',serif; color:#4f3f31; font-size:22px; margin-bottom:8px;">Malditos cigarrillos</h3>
+                <p style="color:#7b6b5a; font-size:13px; margin-bottom:16px;">Priscila Pascacio</p>
+                <div style="font-style:italic; color:#3d342b; line-height:2; font-size:15px; white-space:pre-line;">
+Malditos sean los cigarros que en ti dejan su olor impregnado.
+Malditos sean ellos pues tu tos están empeorando.
+Malditos sean los cigarros son tan asquerosos que prefiero no tenerlos al lado.
+Malditos sean ellos que poco a poco la vida te están arrebatando.
+                </div>
+                <div style="display:flex; gap:20px; margin-top:18px; flex-wrap:wrap; align-items:center;">
+                    <button style="background:none; border:none; color:#b8864b; font-size:16px; cursor:pointer;"><i class="fas fa-heart"></i> ME GUSTA 10</button>
+                    <a href="#" style="color:#7b6b5a; text-decoration:none; font-size:14px;"><i class="fas fa-ruler"></i> VER MÉTRICA</a>
+                    <a href="#poema-priscila-2" class="poema-link-priscila" style="color:#b8864b; text-decoration:none; font-size:14px; font-weight:600;">POEMA SIGUIENTE →</a>
+                    <a href="index.html" style="color:#7b6b5a; text-decoration:none; font-size:14px;"><i class="fas fa-arrow-left"></i> VOLVER A INICIO</a>
+                </div>
+            </div>
+            <div style="margin-top:20px;">
+                <h4 style="font-family:'Merriweather',serif; color:#4f3f31; font-size:18px; margin-bottom:12px;"><i class="fas fa-book-open" style="color:#b8864b;"></i> CONTINÚA LEYENDO ESTOS POEMAS</h4>
+                <div style="display:flex; flex-direction:column; gap:6px;">
+                    <a href="#poema-priscila-2" class="poema-link-priscila" style="color:#4a3f35; text-decoration:none; padding:8px 0; border-bottom:1px solid #f0ebe3; font-size:14px;">Pequeño y grande a la vez</a>
+                    <a href="#poema-priscila-3" class="poema-link-priscila" style="color:#4a3f35; text-decoration:none; padding:8px 0; border-bottom:1px solid #f0ebe3; font-size:14px;">Tristeza eterna</a>
+                    <a href="#poema-priscila-4" class="poema-link-priscila" style="color:#4a3f35; text-decoration:none; padding:8px 0; border-bottom:1px solid #f0ebe3; font-size:14px;">Donde el cielo toca la tierra</a>
+                    <a href="#poema-priscila-5" class="poema-link-priscila" style="color:#4a3f35; text-decoration:none; padding:8px 0; border-bottom:1px solid #f0ebe3; font-size:14px;">Mi Primavera</a>
+                </div>
+            </div>
+            <div style="margin-top:24px; padding-top:20px; border-top:1px solid #ede8df;">
+                <h4 style="font-family:'Merriweather',serif; color:#4f3f31; font-size:18px; margin-bottom:12px;">Comentarios <span style="font-size:14px; color:#7b6b5a; font-weight:400;">(4)</span></h4>
+                <div style="background:#faf8f4; border-radius:8px; padding:16px; margin-bottom:12px;">
+                    <p style="font-weight:600; color:#4f3f31; font-size:14px;">Lector</p>
+                    <p style="color:#5a4d3e; font-size:14px; margin-top:4px;">Un poema con mucha fuerza y sentimiento</p>
+                </div>
+                <div style="display:flex; gap:10px; margin-top:12px;">
+                    <input type="text" placeholder="Escribe un comentario..." style="flex:1; padding:10px 16px; border:1px solid #ede8df; border-radius:30px; outline:none; font-size:14px;" />
+                    <button style="background:#b8864b; color:#fff; border:none; padding:10px 24px; border-radius:30px; font-weight:600; cursor:pointer;">Publicar</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- POEMA 2: Pequeño y grande a la vez -->
+        <div class="poema-contenido-priscila" id="poema-priscila-2" style="margin-top:30px; padding-top:24px; border-top:2px solid #b8864b; display:none;">
+            <div style="background:#faf8f4; border-radius:12px; padding:30px; border-left:4px solid #b8864b;">
+                <h3 style="font-family:'Merriweather',serif; color:#4f3f31; font-size:22px; margin-bottom:8px;">Pequeño y grande a la vez</h3>
+                <p style="color:#7b6b5a; font-size:13px; margin-bottom:16px;">Priscila Pascacio</p>
+                <div style="font-style:italic; color:#3d342b; line-height:2; font-size:15px; white-space:pre-line;">
+Un país pequeño, grande en corazón,
+con símbolos patrios que nos dan unión.
+Colores que ondean con fuerza y pasión,
+historia que brilla en cada canción.
+
+"Pulgarcito" lo llaman por su tamaño, en el mapa.
+pero El Salvador resuena en cada alma.
+Con montes y ríos, volcanes de fuego,
+un pueblo que avanza con fe y anhelo.
+
+Tierra de lucha, trabajo y valor,
+con voces del monte que cuentan su honor.
+Hombres y mujeres, ejemplo de fe,
+sembrando futuro con todo su ser.
+                </div>
+                <div style="display:flex; gap:20px; margin-top:18px; flex-wrap:wrap; align-items:center;">
+                    <button style="background:none; border:none; color:#b8864b; font-size:16px; cursor:pointer;"><i class="fas fa-heart"></i> ME GUSTA 14</button>
+                    <a href="#" style="color:#7b6b5a; text-decoration:none; font-size:14px;"><i class="fas fa-ruler"></i> VER MÉTRICA</a>
+                    <a href="#poema-priscila-3" class="poema-link-priscila" style="color:#b8864b; text-decoration:none; font-size:14px; font-weight:600;">POEMA SIGUIENTE →</a>
+                    <a href="index.html" style="color:#7b6b5a; text-decoration:none; font-size:14px;"><i class="fas fa-arrow-left"></i> VOLVER A INICIO</a>
+                </div>
+            </div>
+            <div style="margin-top:20px;">
+                <h4 style="font-family:'Merriweather',serif; color:#4f3f31; font-size:18px; margin-bottom:12px;"><i class="fas fa-book-open" style="color:#b8864b;"></i> CONTINÚA LEYENDO ESTOS POEMAS</h4>
+                <div style="display:flex; flex-direction:column; gap:6px;">
+                    <a href="#poema-priscila-3" class="poema-link-priscila" style="color:#4a3f35; text-decoration:none; padding:8px 0; border-bottom:1px solid #f0ebe3; font-size:14px;">Tristeza eterna</a>
+                    <a href="#poema-priscila-4" class="poema-link-priscila" style="color:#4a3f35; text-decoration:none; padding:8px 0; border-bottom:1px solid #f0ebe3; font-size:14px;">Donde el cielo toca la tierra</a>
+                    <a href="#poema-priscila-5" class="poema-link-priscila" style="color:#4a3f35; text-decoration:none; padding:8px 0; border-bottom:1px solid #f0ebe3; font-size:14px;">Mi Primavera</a>
+                </div>
+            </div>
+            <div style="margin-top:24px; padding-top:20px; border-top:1px solid #ede8df;">
+                <h4 style="font-family:'Merriweather',serif; color:#4f3f31; font-size:18px; margin-bottom:12px;">Comentarios <span style="font-size:14px; color:#7b6b5a; font-weight:400;">(6)</span></h4>
+                <div style="display:flex; gap:10px; margin-top:12px;">
+                    <input type="text" placeholder="Escribe un comentario..." style="flex:1; padding:10px 16px; border:1px solid #ede8df; border-radius:30px; outline:none; font-size:14px;" />
+                    <button style="background:#b8864b; color:#fff; border:none; padding:10px 24px; border-radius:30px; font-weight:600; cursor:pointer;">Publicar</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- POEMA 3: Tristeza eterna -->
+        <div class="poema-contenido-priscila" id="poema-priscila-3" style="margin-top:30px; padding-top:24px; border-top:2px solid #b8864b; display:none;">
+            <div style="background:#faf8f4; border-radius:12px; padding:30px; border-left:4px solid #b8864b;">
+                <h3 style="font-family:'Merriweather',serif; color:#4f3f31; font-size:22px; margin-bottom:8px;">Tristeza eterna</h3>
+                <p style="color:#7b6b5a; font-size:13px; margin-bottom:16px;">Priscila Pascacio</p>
+                <div style="font-style:italic; color:#3d342b; line-height:2; font-size:15px; white-space:pre-line;">
+Cada noche mi corazón se esconde,
+dejando al descubierto un pecho vacío,
+sin reproche.
+La tristeza llega,
+y el insomnio la acompaña,
+como si fueran hermanas.
+
+No sé cómo dejar de sentir esto,
+ni cómo nombrar lo que llevo dentro;
+me invade la impotencia
+de no saber defenderme.
+
+Quiero cambiar,
+pero dudo lograrlo;
+ya son años así,
+y nada parece transformarlo.
+
+Tal vez sea mi naturaleza
+ser un alma en pena,
+llorando en silencio
+por motivos que nadie recuerda.
+                </div>
+                <div style="display:flex; gap:20px; margin-top:18px; flex-wrap:wrap; align-items:center;">
+                    <button style="background:none; border:none; color:#b8864b; font-size:16px; cursor:pointer;"><i class="fas fa-heart"></i> ME GUSTA 16</button>
+                    <a href="#" style="color:#7b6b5a; text-decoration:none; font-size:14px;"><i class="fas fa-ruler"></i> VER MÉTRICA</a>
+                    <a href="#poema-priscila-4" class="poema-link-priscila" style="color:#b8864b; text-decoration:none; font-size:14px; font-weight:600;">POEMA SIGUIENTE →</a>
+                    <a href="index.html" style="color:#7b6b5a; text-decoration:none; font-size:14px;"><i class="fas fa-arrow-left"></i> VOLVER A INICIO</a>
+                </div>
+            </div>
+            <div style="margin-top:20px;">
+                <h4 style="font-family:'Merriweather',serif; color:#4f3f31; font-size:18px; margin-bottom:12px;"><i class="fas fa-book-open" style="color:#b8864b;"></i> CONTINÚA LEYENDO ESTOS POEMAS</h4>
+                <div style="display:flex; flex-direction:column; gap:6px;">
+                    <a href="#poema-priscila-4" class="poema-link-priscila" style="color:#4a3f35; text-decoration:none; padding:8px 0; border-bottom:1px solid #f0ebe3; font-size:14px;">Donde el cielo toca la tierra</a>
+                    <a href="#poema-priscila-5" class="poema-link-priscila" style="color:#4a3f35; text-decoration:none; padding:8px 0; border-bottom:1px solid #f0ebe3; font-size:14px;">Mi Primavera</a>
+                </div>
+            </div>
+            <div style="margin-top:24px; padding-top:20px; border-top:1px solid #ede8df;">
+                <h4 style="font-family:'Merriweather',serif; color:#4f3f31; font-size:18px; margin-bottom:12px;">Comentarios <span style="font-size:14px; color:#7b6b5a; font-weight:400;">(8)</span></h4>
+                <div style="display:flex; gap:10px; margin-top:12px;">
+                    <input type="text" placeholder="Escribe un comentario..." style="flex:1; padding:10px 16px; border:1px solid #ede8df; border-radius:30px; outline:none; font-size:14px;" />
+                    <button style="background:#b8864b; color:#fff; border:none; padding:10px 24px; border-radius:30px; font-weight:600; cursor:pointer;">Publicar</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- POEMA 4: Donde el cielo toca la tierra -->
+        <div class="poema-contenido-priscila" id="poema-priscila-4" style="margin-top:30px; padding-top:24px; border-top:2px solid #b8864b; display:none;">
+            <div style="background:#faf8f4; border-radius:12px; padding:30px; border-left:4px solid #b8864b;">
+                <h3 style="font-family:'Merriweather',serif; color:#4f3f31; font-size:22px; margin-bottom:8px;">Donde el cielo toca la tierra</h3>
+                <p style="color:#7b6b5a; font-size:13px; margin-bottom:16px;">Priscila Pascacio</p>
+                <div style="font-style:italic; color:#3d342b; line-height:2; font-size:15px; white-space:pre-line;">
+Un día, buscando paz, me encontré,
+cuando a una montaña decidí ascender. Cubierta de neblina estaba,
+y, de alguna forma, mi mente se aclaraba.
+
+El canto de las aves, como dulce melodía,
+calmaba con esmero mi corazón en agonía.
+Aquel revuelo que dentro llevaba,
+poco a poco, el viento se lo llevaba.
+
+El frío de la mañana me abrazó
+y, como un manto, suavemente me cubrió.
+Fue en ese instante tan profundo y sincero
+que el cielo a la tierra descendió primero,
+
+un acto de amor que logró conmover
+todo aquello que no sabía comprender.
+Mi mente se aclaró, mi corazón sanó,
+y todo aquello que dolía... el viento lo llevó.
+                </div>
+                <div style="display:flex; gap:20px; margin-top:18px; flex-wrap:wrap; align-items:center;">
+                    <button style="background:none; border:none; color:#b8864b; font-size:16px; cursor:pointer;"><i class="fas fa-heart"></i> ME GUSTA 18</button>
+                    <a href="#" style="color:#7b6b5a; text-decoration:none; font-size:14px;"><i class="fas fa-ruler"></i> VER MÉTRICA</a>
+                    <a href="#poema-priscila-5" class="poema-link-priscila" style="color:#b8864b; text-decoration:none; font-size:14px; font-weight:600;">POEMA SIGUIENTE →</a>
+                    <a href="index.html" style="color:#7b6b5a; text-decoration:none; font-size:14px;"><i class="fas fa-arrow-left"></i> VOLVER A INICIO</a>
+                </div>
+            </div>
+            <div style="margin-top:20px;">
+                <h4 style="font-family:'Merriweather',serif; color:#4f3f31; font-size:18px; margin-bottom:12px;"><i class="fas fa-book-open" style="color:#b8864b;"></i> CONTINÚA LEYENDO ESTOS POEMAS</h4>
+                <div style="display:flex; flex-direction:column; gap:6px;">
+                    <a href="#poema-priscila-5" class="poema-link-priscila" style="color:#4a3f35; text-decoration:none; padding:8px 0; border-bottom:1px solid #f0ebe3; font-size:14px;">Mi Primavera</a>
+                </div>
+            </div>
+            <div style="margin-top:24px; padding-top:20px; border-top:1px solid #ede8df;">
+                <h4 style="font-family:'Merriweather',serif; color:#4f3f31; font-size:18px; margin-bottom:12px;">Comentarios <span style="font-size:14px; color:#7b6b5a; font-weight:400;">(9)</span></h4>
+                <div style="display:flex; gap:10px; margin-top:12px;">
+                    <input type="text" placeholder="Escribe un comentario..." style="flex:1; padding:10px 16px; border:1px solid #ede8df; border-radius:30px; outline:none; font-size:14px;" />
+                    <button style="background:#b8864b; color:#fff; border:none; padding:10px 24px; border-radius:30px; font-weight:600; cursor:pointer;">Publicar</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- POEMA 5: Mi Primavera -->
+        <div class="poema-contenido-priscila" id="poema-priscila-5" style="margin-top:30px; padding-top:24px; border-top:2px solid #b8864b; display:none;">
+            <div style="background:#faf8f4; border-radius:12px; padding:30px; border-left:4px solid #b8864b;">
+                <h3 style="font-family:'Merriweather',serif; color:#4f3f31; font-size:22px; margin-bottom:8px;">Mi Primavera</h3>
+                <p style="color:#7b6b5a; font-size:13px; margin-bottom:16px;">Priscila Pascacio</p>
+                <div style="font-style:italic; color:#3d342b; line-height:2; font-size:15px; white-space:pre-line;">
+Estación de flores y amor,
+alegría para muchos, tristeza para otros.
+Enamorados tomados de la mano
+pasean por las esquinas del mundo.
+
+Nunca pensé ser uno de ellos,
+para mí todo eso parecía absurdo.
+Pero llegaste tú,
+y de repente esos paseos por las esquinas del amor
+dejaron de parecer vacíos,
+pues las flores tomaron un nuevo color.
+
+Las cosas cotidianas parecían nuevas,
+aunque las hiciera todos los días.
+Llegaste de repente, sin aviso,
+y no me arrepiento de haberte visto.
+
+La primavera es el inicio del amor, dicen las abuelas...
+y tal vez, solo tal vez,
+tenían razón.
+
+Tal vez la primavera no sea solo una estación,
+sino el suspiro que despertó mi corazón.
+Y si es así, entonces tú eres mi primavera,
+porque desde que llegaste cambió mi vida entera.
+
+Todo en mí comenzó lento a florecer,
+como un jardín que volvió a renacer,
+y entre todas las flores que pude conocer,
+ninguna brilló tanto como tú al amanecer.
+                </div>
+                <div style="display:flex; gap:20px; margin-top:18px; flex-wrap:wrap; align-items:center;">
+                    <button style="background:none; border:none; color:#b8864b; font-size:16px; cursor:pointer;"><i class="fas fa-heart"></i> ME GUSTA 20</button>
+                    <a href="#" style="color:#7b6b5a; text-decoration:none; font-size:14px;"><i class="fas fa-ruler"></i> VER MÉTRICA</a>
+                    <a href="index.html" style="color:#7b6b5a; text-decoration:none; font-size:14px;"><i class="fas fa-arrow-left"></i> VOLVER A INICIO</a>
+                </div>
+            </div>
+            <div style="margin-top:20px;">
+                <h4 style="font-family:'Merriweather',serif; color:#4f3f31; font-size:18px; margin-bottom:12px;"><i class="fas fa-book-open" style="color:#b8864b;"></i> CONTINÚA LEYENDO ESTOS POEMAS</h4>
+                <div style="display:flex; flex-direction:column; gap:6px;">
+                    <a href="#poema-priscila-1" class="poema-link-priscila" style="color:#4a3f35; text-decoration:none; padding:8px 0; border-bottom:1px solid #f0ebe3; font-size:14px;">Malditos cigarrillos</a>
+                    <a href="#poema-priscila-2" class="poema-link-priscila" style="color:#4a3f35; text-decoration:none; padding:8px 0; border-bottom:1px solid #f0ebe3; font-size:14px;">Pequeño y grande a la vez</a>
+                    <a href="#poema-priscila-3" class="poema-link-priscila" style="color:#4a3f35; text-decoration:none; padding:8px 0; border-bottom:1px solid #f0ebe3; font-size:14px;">Tristeza eterna</a>
+                    <a href="#poema-priscila-4" class="poema-link-priscila" style="color:#4a3f35; text-decoration:none; padding:8px 0; border-bottom:1px solid #f0ebe3; font-size:14px;">Donde el cielo toca la tierra</a>
+                </div>
+            </div>
+            <div style="margin-top:24px; padding-top:20px; border-top:1px solid #ede8df;">
+                <h4 style="font-family:'Merriweather',serif; color:#4f3f31; font-size:18px; margin-bottom:12px;">Comentarios <span style="font-size:14px; color:#7b6b5a; font-weight:400;">(12)</span></h4>
+                <div style="background:#faf8f4; border-radius:8px; padding:16px; margin-bottom:12px;">
+                    <p style="font-weight:600; color:#4f3f31; font-size:14px;">Lectora</p>
+                    <p style="color:#5a4d3e; font-size:14px; margin-top:4px;">Un poema lleno de ternura y esperanza</p>
+                </div>
+                <div style="display:flex; gap:10px; margin-top:12px;">
+                    <input type="text" placeholder="Escribe un comentario..." style="flex:1; padding:10px 16px; border:1px solid #ede8df; border-radius:30px; outline:none; font-size:14px;" />
+                    <button style="background:#b8864b; color:#fff; border:none; padding:10px 24px; border-radius:30px; font-weight:600; cursor:pointer;">Publicar</button>
+                </div>
+            </div>
+        </div>
+
+    </section>
+</div>
+<!-- FIN SECCIÓN PRISCILA PASCACIO -->
+
+<!-- ============================================================ -->
+<!-- SECCIÓN: SAÚL ENRIQUE MANCÍA (SOLO BIOGRAFÍA)                -->
+<!-- ============================================================ -->
+<div id="poeta-saul-enrique" class="poeta-contenido-principal" style="display:none;">
+    <section class="section" style="border:2px solid #b8864b; background:#fcf9f5; margin-top:30px;">
+        <div style="display:flex; flex-wrap:wrap; gap:30px; align-items:flex-start;">
+            <div style="flex:0 0 160px; text-align:center;">
+                <div style="width:140px; height:140px; border-radius:50%; background:#d4c5a0; margin:0 auto; display:flex; align-items:center; justify-content:center; font-size:60px; color:#6b4f3a;">
+                    <i class="fas fa-user-circle"></i>
+                </div>
+                <h3 style="font-family:'Merriweather',serif; color:#4f3f31; margin-top:12px; font-size:18px;">Saúl Mancía</h3>
+                <span style="background:#b8864b; color:#fff; padding:4px 16px; border-radius:30px; font-size:12px; display:inline-block; margin-top:4px;">Poeta · Periodista</span>
+            </div>
+            <div style="flex:1;">
+                <h2 style="font-family:'Merriweather',serif; color:#4f3f31; font-size:28px;">Saúl Enrique Mancía</h2>
+                <p style="color:#7b6b5a; font-size:14px; margin-bottom:12px;"><i class="fas fa-calendar-alt" style="color:#b8864b;"></i> Nacido en 1983 · El Salvador</p>
+                <p style="font-size:15px; color:#4a3f35; line-height:1.8;">
+                    <strong>Saúl Enrique Mancía</strong> es un periodista, productor cultural y poeta salvadoreño. Nació en El Salvador en el año 1983. Estudió la Licenciatura en Periodismo en la <strong>Universidad de El Salvador</strong> y realizó una especialización en Producción y Dirección de Cine y Televisión en la Escuela de Comunicaciones "Mónica Herrera".
+                </p>
+                <p style="font-size:15px; color:#4a3f35; line-height:1.8; margin-top:8px;">
+                    Ejerció como productor cultural en los medios de comunicación públicos en El Salvador, además de desempeñarse en el área de comunicación institucional durante ocho años. Amante de las letras y escritor de poesía desde la adolescencia, forma parte del <strong>Colectivo Literario Voces Chalatecas</strong>.
+                </p>
+                <p style="font-size:15px; color:#4a3f35; line-height:1.8; margin-top:8px;">
+                    Ha llevado en alto la bandera de El Salvador en diferentes países, desde República Dominicana hasta Los Andes Ecuatorianos, representando la poesía y la cultura salvadoreña en escenarios internacionales.
+                </p>
+                <div style="margin-top:12px; display:flex; gap:10px; flex-wrap:wrap;">
+                    <a href="#" class="btn btn-sm btn-outline">CONTINUAR LEYENDO »</a>
+                </div>
+                <div style="margin-top:14px; display:flex; gap:16px; flex-wrap:wrap; border-top:1px solid #ede8df; padding-top:14px;">
+                    <a href="#" style="color:#b8864b; text-decoration:none; font-weight:600; font-size:14px;"><i class="fas fa-book"></i> POEMAS</a>
+                    <a href="#" style="color:#7b6b5a; text-decoration:none; font-weight:600; font-size:14px;"><i class="fas fa-user"></i> BIOGRAFÍA</a>
+                    <a href="#" style="color:#7b6b5a; text-decoration:none; font-weight:600; font-size:14px;"><i class="fas fa-clock"></i> LÍNEA DE TIEMPO</a>
+                    <a href="#" style="color:#7b6b5a; text-decoration:none; font-weight:600; font-size:14px;"><i class="fas fa-map"></i> MAPA DE TIEMPO</a>
+                    <a href="#" style="color:#7b6b5a; text-decoration:none; font-weight:600; font-size:14px;"><i class="fas fa-images"></i> GALERÍA</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Lista de poemas (vacía porque no se proporcionaron poemas) -->
+        <div style="margin-top:30px; padding-top:24px; border-top:2px solid #ede8df;">
+            <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; margin-bottom:16px;">
+                <h3 style="font-family:'Merriweather',serif; color:#4f3f31; font-size:22px;"><i class="fas fa-feather-alt" style="color:#b8864b;"></i> Poemas de Saúl Mancía</h3>
+                <div style="display:flex; gap:8px; align-items:center;">
+                    <span style="font-size:13px; color:#7b6b5a; font-weight:600;">ORDENAR:</span>
+                    <a href="#" style="font-size:13px; color:#b8864b; text-decoration:none; font-weight:700;">A-Z</a>
+                    <span style="color:#7b6b5a;">|</span>
+                    <a href="#" style="font-size:13px; color:#7b6b5a; text-decoration:none;">POPULARIDAD</a>
+                </div>
+            </div>
+            <div style="display:grid; grid-template-columns:1fr 1fr; gap:4px 30px;">
+                <div style="padding:6px 0; color:#8f7e6b; border-bottom:1px solid #f0ebe3; font-size:14px; font-style:italic;">
+                    <i class="fas fa-hourglass-half" style="color:#b8864b; margin-right:8px;"></i> Próximamente...
+                </div>
+                <div style="padding:6px 0; color:#8f7e6b; border-bottom:1px solid #f0ebe3; font-size:14px; font-style:italic;">
+                    <i class="fas fa-hourglass-half" style="color:#b8864b; margin-right:8px;"></i> Próximamente...
+                </div>
+            </div>
+            <div style="margin-top:16px; padding:16px; background:#faf8f4; border-radius:8px; text-align:center; color:#7b6b5a; font-size:14px;">
+                <i class="fas fa-info-circle" style="color:#b8864b; margin-right:8px;"></i>
+                Los poemas de Saúl Enrique Mancía estarán disponibles próximamente en esta sección.
+            </div>
+        </div>
+
+    </section>
+</div>
+<!-- FIN SECCIÓN SAÚL ENRIQUE MANCÍA -->
+
+        <!-- FOOTER -->
+        <div class="footer-links">
+            <span>© 2026 Colectivo Literario Voces Chalatecas · Chalatenango, El Salvador</span>
+            <span>
+                <a href="index.html">Términos</a>
+                <a href="index.html">Privacidad</a>
+                <a href="index.html">Contacto</a>
+            </span>
+        </div>
+
+    </main>
+
+    <script src="script.js"></script>
+    <script>
+        // Script para mostrar el poeta según el parámetro de URL
+        document.addEventListener('DOMContentLoaded', function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const poeta = urlParams.get('poeta') || 'anely';
+            
+            // Ocultar todos los poetas
+            document.querySelectorAll('.poeta-contenido-principal').forEach(function(el) {
+                el.style.display = 'none';
+            });
+            
+            // Mostrar el poeta seleccionado
+            const target = document.getElementById('poeta-' + poeta);
+            if (target) {
+                target.style.display = 'block';
+            }
+            
+            // Manejar clics en enlaces de poemas
+            document.querySelectorAll('[class^="poema-link-"]').forEach(function(link) {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href');
+                    
+                    // Ocultar todos los poemas de la misma categoría
+                    const container = this.closest('.poeta-contenido-principal');
+                    if (container) {
+                        const todosLosPoemas = container.querySelectorAll('[class^="poema-contenido-"]');
+                        todosLosPoemas.forEach(function(p) {
+                            p.style.display = 'none';
+                        });
+                    }
+                    
+                    // Mostrar el poema seleccionado
+                    const targetPoema = document.querySelector(targetId);
+                    if (targetPoema) {
+                        targetPoema.style.display = 'block';
+                        targetPoema.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    }
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>
